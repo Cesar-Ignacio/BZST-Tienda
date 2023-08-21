@@ -714,14 +714,14 @@ html{
 
 
 /*----------------CarritoCompras---------------------*/
-.carroMainS1CarroCompra{
+.carroMainS1CarritoCompra{
     background-color: #3D3839;
     font-family: 'Josefin Sans', sans-serif;
     padding: 1.875rem .3125rem .3125rem .3125rem;
     width: 50%;
     margin: 0.5rem;
 }
-.carroMainS1CarroCompra h1{
+.carroMainS1CarritoCompra h1{
     color: white;
 }
 .carroMainS1Contendor{
