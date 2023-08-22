@@ -723,15 +723,17 @@ html{
     /* background: red; */
     display: grid;
     grid-template-columns:75% auto;
+    grid-template-rows:12rem auto ;
     column-gap: 1rem;
-    max-width: 100vw;
-    padding: 1em;
+    row-gap: 1rem;
+    width: 112.5rem;
 }
 .carroMainS1CarritoCompra{
     background-color: white;
     font-family: 'Josefin Sans', sans-serif;
     padding: 0.5em;
     width: 100%;
+    grid-row: span 2;
 }
 .carroMainS1CarritoCompra h1{
     color: black;
@@ -800,7 +802,7 @@ html{
     text-decoration: none;
     color: #0F5EA1;
 }
-.carroMainS2ResumenCompra{
+.carroMainS1ResumenCompra{
     background-color: #d43e5c;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
@@ -808,17 +810,68 @@ html{
     line-height: 2.5rem;
     width: 100%;
     justify-self: center;
+    grid-column:2;
 }
-.carroMainS2ResumenCompra h2{
+.carroMainS1ResumenCompra h2{
     background-color: #0f2a41;
     padding: 0.32em;
 }
-.carroMainS2ResumenCompra a{
+.carroMainS1ResumenCompra a{
     text-decoration: none;
     color: #0F5EA1;
     background-color: white;
     padding: 0.4em;
     border-radius: .2rem;
+}
+.carroMainS1OtrosProductos{
+    background-color: rgb(255, 255, 255);
+    grid-column:2;
+    height: 50rem;
+    padding: 0.5em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.carroMainS1OtrosProductos h3{
+    margin-bottom: 1rem;
+}
+.carroMainS1ContenedorOtros{
+    /* background-color: #a7c2bc; */
+    padding: 0.1em;
+}
+.carroMainS1OtroArticulo{
+    /* background-color: red; */
+    margin-bottom: 0.1rem;
+    display: flex;
+}
+.carroMainS1OtroArticulo img{
+    /* background-color: #0fe160; */
+    width: 7rem;
+    height: 7rem;
+}
+.carroMainS1OtroArticulo ul{
+    padding: 0.4em;
+}
+.carroMainS1OtroArticulo li{
+    list-style: none;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+.carroMainS1OtroArticulo span{
+    font-size: 1.1rem;
+}
+.carroMainS1OtroArticulo strong{
+    color: rgb(156, 19, 19);
+}
+.carroMainS1OtroArticulo  button{
+    background-color: #f1f500;
+    border-style: none;
+    padding: 0.4em 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 2rem;
+}
+.carroMainS1OtroArticulo a{
+    text-decoration: none;
+    color: #020202;
+    font-size: 1rem;
 }
 /*---------------Footer----------------*/
 
