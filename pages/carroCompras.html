@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/img/Favicon.png" type="image/x-icon">
 
@@ -39,17 +40,29 @@
                             <img src="../assets/img/proRobat.jpeg" alt="productoComprar">
                         </div>
                         <div class="carroMainS1InfoProducto">
-                            <ul class="carroMainS1Descripcion">
+                            <!-- <ul class="carroMainS1Descripcion">
                                 <li><span>Nombre de Producto</span></li>
                                 <li>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perspiciatis
                                         iste, tenetur ex doloribus quo? Facere, dolorem minus. Sequi, sint.</p>
                                 </li>
-                                <li><strong>$52.222</strong></li>
+                                <li><strong class="fs-5">$52.222</strong></li>
                                 <li><img src="../assets/svg/marca1.svg" alt="marcaProducto"></li>
-                                <li class="liVerde">En Stock</li>
+                                <li class="color-verde">En Stock</li>
                                 <li>Categoría</li>
-                            </ul>
+                            </ul> -->
+                            <dl class="carroMainS1Descripcion">
+                                <dt >Nombre de Producto</dt>
+                                <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae placeat explicabo laboriosam.</dd>
+                                <dt>Precio</dt>
+                                <dd class="precioPro">$ 5.22</dd>
+                                <dt>Disponibilidad</dt>
+                                <dd class="disponibilidadPro">En Stock</dd>
+                                <dt>Categoría</dt>
+                                <dd>Juguete</dd>
+                                <dt>Marca</dt>
+                                <dd><img src="../assets/svg/marca0.svg" alt="LogoMarca"></dd>
+                            </dl>
                             <div class="carroMainS1Destalles">
                                 <label for="cantidad">Canridad</label>
                                 <select name="cantidad" id="cantidad">
@@ -65,7 +78,7 @@
                     </article>
                     <article class="carroMainS1Producto">
                         <div class="carroMainS1ContenedorImg">
-                            <img src="../assets/img/juguete.jpg" alt="productoComprar">
+                            <img src="../assets/img/proMesa.jpg" alt="productoComprar">
                         </div>
                         <div class="carroMainS1InfoProducto">
                             <ul class="carroMainS1Descripcion">
@@ -74,9 +87,9 @@
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perspiciatis
                                         iste, tenetur ex doloribus quo? Facere, dolorem minus. Sequi, sint.</p>
                                 </li>
-                                <li><strong>$52.222</strong></li>
+                                <li><strong class="fs-5">$ 52.222</strong></li>
                                 <li><img src="../assets/svg/marca0.svg" alt="marcaProducto"></li>
-                                <li class="liVerde">En Stock</li>
+                                <li class="color-verde">En Stock</li>
                                 <li>Categoría</li>
                             </ul>
                             <div class="carroMainS1Destalles">
@@ -97,8 +110,8 @@
             <!-- Seccion donde se mostra el resumen del lo comprado -->
             <section class="carroMainS1ResumenCompra">
                 <h2>Resumen de compra</h2>
-                <p>Cantidad productos :2</p>
-                <p>Subtotal :$0.00</p>
+                <p>Cantidad productos : <samp class="fw-bold fs-5">2</samp></p>
+                <p>Subtotal : <samp class="fw-bold fs-5">$0.00</samp></p>
                 <a href="#">Finalizar comprar</a>
                 <a href="#">Vaciar carrito</a>
             </section>
