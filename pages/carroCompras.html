@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/img/Favicon.png" type="image/x-icon">
 
 </head>
 
 <body>
-
     <header class="header">
         <div class="headerLogito">
             <a href="./nosotros.html"><img src="../assets/svg/Logito.svg" alt="Logito"></a>
@@ -31,77 +32,86 @@
         <section class="carroMainS1">
             <!-- Carro de compra -->
             <section class="carroMainS1CarritoCompra">
-                <h1>Carro de compras</h1>
+                <h1 class="m-0">Carro de compras</h1>
                 <!-- Seccion donde se mostrar los producto del carrito -->
-                <section class="carroMainS1Contendor">
-                    <article class="carroMainS1Producto">
-                        <div class="carroMainS1ContenedorImg">
-                            <img src="../assets/img/proRobat.jpeg" alt="productoComprar">
-                        </div>
-                        <div class="carroMainS1InfoProducto">
-                            <ul class="carroMainS1Descripcion">
-                                <li><span>Nombre de Producto</span></li>
-                                <li>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perspiciatis
-                                        iste, tenetur ex doloribus quo? Facere, dolorem minus. Sequi, sint.</p>
-                                </li>
-                                <li><strong>$52.222</strong></li>
-                                <li><img src="../assets/svg/marca1.svg" alt="marcaProducto"></li>
-                                <li class="liVerde">En Stock</li>
-                                <li>Categoría</li>
-                            </ul>
-                            <div class="carroMainS1Destalles">
-                                <label for="cantidad">Canridad</label>
-                                <select name="cantidad" id="cantidad">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="">Eliminar</a>
-                                <a href="">Productos Simulares</a>
-                                <a href="">Compartir</a>
+                <article class="carroMainS1Producto rounded shadow">
+                    <div class="carroMainS1ContenedorImg">
+                        <img src="../assets/img/proRobat.jpeg" alt="productoComprar">
+                    </div>
+                    <div class="carroMainS1InfoProducto">
+                        <div class="carroMainS1Descripcion d-flex justify-content-between align-items-center p-1">
+                            <div>
+                                <span class="fs-5 fw-bold">Nombre Producto</span>
+                                <p>Lorem ipsum dolor sit amet consectetur .</p>
                             </div>
+                            <img src="../assets/svg/marca1.svg" alt="marca">
+                            <form action=""
+                                class="d-flex justify-content-center align-items-center gap-1 border border-secondary">
+                                <button class="btn p-0 text-darck "><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z" />
+                                    </svg></button>
+                                <input class="form-control w-50 h-25 text-center" type="text" value="1">
+                                <button class="btn p-0 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                                    </svg></button>
+                            </form>
+                            <span class="fs-5">$ 0.00</span>
                         </div>
-                    </article>
-                    <article class="carroMainS1Producto">
-                        <div class="carroMainS1ContenedorImg">
-                            <img src="../assets/img/juguete.jpg" alt="productoComprar">
+                        <div class="carroMainS1Destalles p-1">
+                            <a href="">Eliminar</a>
+                            <a href="">Productos Simulares</a>
+                            <a href="">Compartir</a>
                         </div>
-                        <div class="carroMainS1InfoProducto">
-                            <ul class="carroMainS1Descripcion">
-                                <li><span>Nombre de Producto</span></li>
-                                <li>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perspiciatis
-                                        iste, tenetur ex doloribus quo? Facere, dolorem minus. Sequi, sint.</p>
-                                </li>
-                                <li><strong>$52.222</strong></li>
-                                <li><img src="../assets/svg/marca0.svg" alt="marcaProducto"></li>
-                                <li class="liVerde">En Stock</li>
-                                <li>Categoría</li>
-                            </ul>
-                            <div class="carroMainS1Destalles">
-                                <label for="cantidad">Canridad</label>
-                                <select name="cantidad" id="cantidad">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <a href="">Eliminar</a>
-                                <a href="">Productos Simulares</a>
-                                <a href="">Compartir</a>
+                    </div>
+                </article>
+                <article class="carroMainS1Producto rounded shadow">
+                    <div class="carroMainS1ContenedorImg">
+                        <img src="../assets/img/proOso.jpeg" alt="productoComprar">
+                    </div>
+                    <div class="carroMainS1InfoProducto">
+                        <div class="carroMainS1Descripcion d-flex justify-content-between align-items-center p-1">
+                            <div>
+                                <span class="fs-5 fw-bold">Nombre Producto</span>
+                                <p>Lorem ipsum dolor sit amet consectetur .</p>
                             </div>
+                            <img src="../assets/svg/marca0.svg" alt="marca">
+                            <form action=""
+                                class="d-flex justify-content-center align-items-center gap-1 border border-secondary">
+                                <button class="btn p-0 text-darck "><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z" />
+                                    </svg></button>
+                                <input class="form-control w-50 h-25 text-center" type="text" value="1">
+                                <button class="btn p-0 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                                    </svg></button>
+                            </form>
+                            <span class="fs-5">$ 0.00</span>
                         </div>
-                    </article>
-                </section>
+                        <div class="carroMainS1Destalles p-1">
+                            <a href="">Eliminar</a>
+                            <a href="">Productos Simulares</a>
+                            <a href="">Compartir</a>
+                        </div>
+                    </div>
+                </article>
             </section>
             <!-- Seccion donde se mostra el resumen del lo comprado -->
             <section class="carroMainS1ResumenCompra">
-                <h2>Resumen de compra</h2>
-                <p>Cantidad productos :2</p>
-                <p>Subtotal :$0.00</p>
+                <h2 class="m-0">Resumen de compra</h2>
+                <p>Cantidad productos : <samp class="fw-bold fs-5">2</samp></p>
+                <p>Subtotal : <samp class="fw-bold fs-5">$0.00</samp></p>
                 <a href="#">Finalizar comprar</a>
                 <a href="#">Vaciar carrito</a>
             </section>
+            <!-- Otros Productos -->
             <section class="carroMainS1OtrosProductos">
                 <h3>Articulos destacados que te pueden gustar</h3>
                 <div class="carroMainS1ContenedorOtros">
@@ -109,7 +119,9 @@
                         <img src="../assets/img/proBuzz.jpg" alt="img">
                         <ul>
                             <li><span>Nombre producto</span></li>
-                            <li><p>Lorem ipsum dolor sit amet.</p></li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </li>
                             <li><strong>$ 0.00</strong></li>
                             <li><button><a href="">Agregar</a></button></li>
                         </ul>
@@ -118,7 +130,9 @@
                         <img src="../assets/img/proHotWh.jpg" alt="img">
                         <ul>
                             <li><span>Nombre producto</span></li>
-                            <li><p>Lorem ipsum dolor sit amet.</p></li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </li>
                             <li><strong>$ 0.00</strong></li>
                             <li><button><a href="">Agregar</a></button></li>
                         </ul>
@@ -127,7 +141,9 @@
                         <img src="../assets/img/proMesa.jpg" alt="img">
                         <ul>
                             <li><span>Nombre producto</span></li>
-                            <li><p>Lorem ipsum dolor sit amet.</p></li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </li>
                             <li><strong>$ 0.00</strong></li>
                             <li><button><a href="">Agregar</a></button></li>
                         </ul>
@@ -136,7 +152,9 @@
                         <img src="../assets/img/proDinosaurio.jpeg" alt="img">
                         <ul>
                             <li><span>Nombre producto</span></li>
-                            <li><p>Lorem ipsum dolor sit amet.</p></li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </li>
                             <li><strong>$ 0.00</strong></li>
                             <li><button><a href="">Agregar</a></button></li>
                         </ul>
@@ -145,7 +163,9 @@
                         <img src="../assets/img/proOso.jpeg" alt="img">
                         <ul>
                             <li><span>Nombre producto</span></li>
-                            <li><p>Lorem ipsum dolor sit amet.</p></li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </li>
                             <li><strong>$ 0.00</strong></li>
                             <li><button><a href="">Agregar</a></button></li>
                         </ul>
@@ -154,7 +174,9 @@
                         <img src="../assets/img/proRobat.jpeg" alt="img">
                         <ul>
                             <li><span>Nombre producto</span></li>
-                            <li><p>Lorem ipsum dolor sit amet.</p></li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </li>
                             <li><strong>$ 0.00</strong></li>
                             <li><button><a href="">Agregar</a></button></li>
                         </ul>
