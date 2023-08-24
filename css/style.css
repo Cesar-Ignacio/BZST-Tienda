@@ -4,142 +4,12 @@
 /* Tipografía
 font-family: 'Josefin Sans', sans-serif;
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+
+*{
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    box-sizing: border-box;
 }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/*---------------class coleres----------------*/
-.color-verde {
-    color: rgb(0, 255, 0);
-}
-
-
 /*---------------Header----------------*/
 
 .header {
@@ -175,6 +45,8 @@ table {
     display: flex;
     width: 40rem;
     justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
 }
 
 .headerLi {
@@ -956,15 +828,13 @@ table {
     width: 112.5rem;
     padding: 1em;
 }
-
 .carroMainS1CarritoCompra {
     background-color: white;
     font-family: 'Josefin Sans', sans-serif;
-    padding: 0.5em;
+    padding: 0.5em 2em ;
     width: 100%;
     grid-row: span 2;
 }
-
 .carroMainS1CarritoCompra h1 {
     color: black;
     padding: 0.2em;
@@ -972,25 +842,18 @@ table {
     text-align: center;
     /* background-color: #04f3c3; */
 }
-
-.carroMainS1Contendor {
-    background-color: #020202;
-    /* padding: .15rem; */
-}
-
 .carroMainS1Producto {
-    background-color: white;
-    margin-bottom: 0.2rem;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    /* background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%); */
+    margin-bottom: 1rem;
     padding: 0.5em;
     display: flex;
     gap: 1rem;
 }
-
 .carroMainS1ContenedorImg {
     background-color: #0f2a41;
-    width: 30%;
-    max-height: 22rem;
-    /* border: #020202 solid 1px; */
+    width: 10rem;
+    height: 10rem;
 }
 
 .carroMainS1ContenedorImg img {
@@ -998,68 +861,43 @@ table {
     height: 100%;
     object-fit: cover;
 }
-
 .carroMainS1InfoProducto {
     /* background-color: #aec4bf; */
-    width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     grid-column: 2;
-    /* border: #04f3c3 solid 1px; */
+    padding: 0.5em;
+    flex-grow: 1;
 }
-
 .carroMainS1Descripcion {
     /* background-color: rgb(0, 255, 98); */
-    padding: 0;
+    height: 80%;
 }
-.carroMainS1Descripcion dt{
-    font-size: 1.4rem;
-    /* background-color: rgb(215, 215, 221); */
-}
-.carroMainS1Descripcion dd{
-    /* background-color: red; */
-    margin-bottom: 0.5rem;
-}
-.disponibilidadPro{
-    color:rgb(21, 255, 0);
-
-}
-.carroMainS1Descripcion li {
-    list-style: none;
-    margin-bottom: 0.8rem;
-}
-
-.carroMainS1Descripcion span {
-    font-size: 1.6rem;
-}
-
 .carroMainS1Descripcion img {
     /* background-color: #04f3c3; */
     width: 4rem;
     min-height: 4rem;
 }
-
+.carroMainS1Descripcion form{
+    /* background-color: #04f3c3; */
+    width:8rem;   
+}
 .carroMainS1Destalles {
-    /* background-color: red; */
-    padding: 0.5em 0;
-    display: flex;
-    align-items: center;
+    height:20%;
+    /* background-color: rgb(145, 255, 0); */
 }
-
-.carroMainS1InfoProducto select {
-    width: 3rem;
-    height: 2rem;
-    border-radius: 0.5rem;
-}
-
 .carroMainS1Destalles a {
-    margin-left: 0.5rem;
-    border-left: rgb(122, 122, 218) solid 2px;
-    padding: 0 1em;
     text-decoration: none;
     color: #0F5EA1;
+    margin-right:1rem;
 }
+
+
+
+
+
+
+
 
 .carroMainS1ResumenCompra {
     background-color: #ffffff;
@@ -1070,13 +908,14 @@ table {
     justify-self: center;
     grid-column: 2;
 }
-
 .carroMainS1ResumenCompra h2 {
     /* background-color: #0f2a41; */
     padding: 0.32em 0;
     font-size: 1.5rem;
 }
-
+.carroMainS1ResumenCompra p{
+    margin: 0;
+}
 .carroMainS1ResumenCompra a {
     text-decoration: none;
     color: #020202;
@@ -1133,9 +972,11 @@ table {
 .carroMainS1OtroArticulo p {
     line-height: 0.7rem;
 }
+
 .carroMainS1ContenedorOtros strong {
     color: rgb(156, 19, 19);
 }
+
 .carroMainS1OtroArticulo button {
     background-color: #f1f500;
     border-style: none;
