@@ -12,7 +12,13 @@ font-family: 'Josefin Sans', sans-serif;
 }
 /*---------------Header----------------*/
 
-.header {
+.header{
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.headerContenedor {
     background-color: rgb(0, 0, 0);
     font-family: 'Josefin Sans', sans-serif;
     display: flex;
@@ -20,11 +26,8 @@ font-family: 'Josefin Sans', sans-serif;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+    
 }
-
 .headerLogito a {
     /* background-color: blue; */
     display: flex;
@@ -32,7 +35,7 @@ font-family: 'Josefin Sans', sans-serif;
 }
 
 .headerLogito img {
-    width: 70%;
+    width: 8rem;
     /* background-color: red; */
 }
 
@@ -61,14 +64,11 @@ font-family: 'Josefin Sans', sans-serif;
     color: white;
     padding: 0.2em 1em;
     /* background-color: #0F5EA1; */
-
 }
-
-.headerLiA img {
-    /* background-color:blue; */
-    width: 70%;
+.headerContenedorIconCarrito{
+    /* background-color: red; */
+    padding: 0.1em;
 }
-
 /*---------------Main----------------*/
 
 /*----------------Inicio---------------------*/
@@ -76,7 +76,7 @@ font-family: 'Josefin Sans', sans-serif;
     background-image: url(../assets/img/portadad.jpeg);
     background-size: cover;
     padding: 1em 0;
-    min-height: 100vh;
+    height: 38rem;
     position: relative;
     display: flex;
     justify-content: center;
