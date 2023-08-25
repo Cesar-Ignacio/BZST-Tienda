@@ -14,7 +14,7 @@
 
 <body>
     <!---------------**Header**--------------->
-    <header class="header container-fluid p-0">
+    <header class="header container-fluid p-0 ">
         <!-- <div class="headerContenedor container-xxl"> -->
         <!---------------**Logito**--------------->
         <!-- <div class="headerLogito">
@@ -31,45 +31,55 @@
                                 src="./assets/svg/carroCompras.svg" alt="carritoCompras"></a></li>
                 </ul>
             </nav> -->
-        <nav class="headerContenedor container-xxl navbar navbar-expand-sm p-0" data-bs-theme="dark">
-            <div class="container-fluid d-flex justify-content-evenly">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <!-- Logito -->
-                <div class="headerLogito">
-                    <a href="./pages/nosotros.html"><img src="./assets/svg/Logito.svg" alt="logito"></a>
-                </div>
-                <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="headerLi nav-item"><a class="headerLiA nav-link " href="#">Inicio</a></li>
-                        <li class="headerLi nav-item"><a class="headerLiA nav-link "
-                                href="./pages/nosotros.html">Nosotros</a></li>
-                        <li class="headerLi nav-item w-50">
-                            <form class="w-100" role="search">
-                                <input class="form-control  text-center  p-0" type="search" placeholder="Buscar Producto" aria-label="Search">
-                            </form>
-                        </li>
-                        <li class="headerLi nav-item"><a class="headerLiA nav-link "
-                                href="./pages/productos.html">Productos</a></li>
-                        <li class="headerLi nav-item"><a class="headerLiA nav-link "
-                                href="./pages/contacto.html">Contacto</a></li>
-
-                        <!-- <li class="headerLi nav-item"><a class="headerLiA" href="./pages/carroCompras.html"><img
+        <nav class="headerContenedor container-xxl navbar navbar-expand-sm p-0 d-flex justify-content-evenly"
+            data-bs-theme="dark">
+            <!-- <div class="container-fluid d-flex justify-content-evenly bg-success"> -->
+            <!---------------**Icono Menu**--------------->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <!---------------**Logito**--------------->
+            <div class="headerLogito">
+                <a href="./pages/nosotros.html">
+                    <img src="./assets/svg/Logito.svg" alt="logito">
+                </a>
+            </div>
+            <!---------------**Navegador**--------------->
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo03">
+                <ul class="navbar-nav m-0 p-1">
+                    <li class="headerLi nav-item">
+                        <a class="headerLiA nav-link " href="#">Inicio</a>
+                    </li>
+                    <li class="headerLi nav-item">
+                        <a class="headerLiA nav-link " href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="headerLi nav-item w-50">
+                        <form class="w-100" role="search">
+                            <input class="form-control  text-center  p-0" type="search" placeholder="Buscar Producto"
+                                aria-label="Search">
+                        </form>
+                    </li>
+                    <li class="headerLi nav-item">
+                        <a class="headerLiA nav-link " href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="headerLi nav-item">
+                        <a class="headerLiA nav-link " href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <!-- <li class="headerLi nav-item"><a class="headerLiA" href="./pages/carroCompras.html"><img
                                     src="./assets/svg/carroCompras.svg" alt="carritoCompras">
                             </a>
                         </li> -->
-                    </ul>
+                </ul>
 
-                </div>
-                <div class="headerContenedorIconCarrito">
-                    <a class="" href="./pages/carroCompras.html">
-                        <img src="./assets/svg/carroCompras.svg" alt="carritoCompras">
-                    </a>
-                </div>
             </div>
+            <!---------------**Icono Carrito**--------------->
+            <div class="headerContenedorIconCarrito">
+                <a class="" href="./pages/carroCompras.html">
+                    <img src="./assets/svg/carroCompras.svg" alt="carritoCompras">
+                </a>
+            </div>
+            <!-- </div> -->
         </nav>
         <!-- </div> -->
     </header>
