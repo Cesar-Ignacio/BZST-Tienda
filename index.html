@@ -14,7 +14,7 @@
 
 <body>
     <!---------------**Header**--------------->
-    <header class="header container-fluid p-0 ">
+    <header class="header container-fluid p-0 z-3 ">
         <!-- <div class="headerContenedor container-xxl"> -->
         <!---------------**Logito**--------------->
         <!-- <div class="headerLogito">
@@ -87,16 +87,10 @@
     <main class="inicioMain container-xxl p-0">
         <!---------------**Sección 1**--------------->
         <section class="inicioMainS1">
-            <!-- <div class="inicioMainS1ApartadoTiulo">
-                <h1>Te acercamos a lo que buscas <br> BZST vamos</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, earum.</p>
-                <button type="submit"><a href="pages/productos.html">Ver más</a></button>
-            </div>
-            <div class="inicioMainS1ContenedorImg">
-                <img class="waves" src="./assets/img/proPelota.jpeg" alt="">
-            </div> -->
-            <div id="carouselExampleDark" class="sleader carousel carousel-dark slide bg-primary d-flex justify-content-center m-0">
-                <div class="carousel-indicators z-1">
+            <!-- Slider -->
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade m-0 p-0" data-bs-ride="carousel">
+                <!-- Indicador de slider -->
+                <div class="carousel-indicators z-2">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
@@ -104,41 +98,62 @@
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner p-0 bg-success">
+                <!-- Contenido imagen y texto -->
+                <div class="carousel-inner p-0 bg-success active">
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="./assets/img/s4.jpg" class="d-block w-100" alt="img">
-                        <div class="carousel-caption d-none d-md-block text-black ">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./assets/img/s4.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <a href="./pages/productos.html" class="text-reset inicioMainS1Enlace">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-eye-fill efectoEye" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./assets/img/s4.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <a href="./pages/productos.html" class="text-reset inicioMainS1Enlace">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-eye-fill efectoEye" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
                         <img src="./assets/img/InicioPresentacion1.gif" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <a href="./pages/productos.html" class="text-reset inicioMainS1Enlace">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor "
+                                    class="bi bi-eye-fill efectoEye" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
+
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <svg preserveAspectRatio="none" class="inicioMainS1Waves" xmlns="http://www.w3.org/2000/svg"
+            <!-- Waves. luego poner en un after/before -->
+            <svg preserveAspectRatio="none" class="inicioMainS1Waves z-1" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1440 320">
                 <path fill="#fff" fill-opacity="1"
                     d="M0,64L18.5,85.3C36.9,107,74,149,111,181.3C147.7,213,185,235,222,218.7C258.5,203,295,149,332,160C369.2,171,406,245,443,245.3C480,245,517,171,554,154.7C590.8,139,628,181,665,176C701.5,171,738,117,775,96C812.3,75,849,85,886,128C923.1,171,960,245,997,272C1033.8,299,1071,277,1108,234.7C1144.6,192,1182,128,1218,133.3C1255.4,139,1292,213,1329,218.7C1366.2,224,1403,160,1422,128L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z">
