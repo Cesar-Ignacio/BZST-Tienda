@@ -7,6 +7,8 @@
     <title>Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./assets/img/Favicon.png" type="image/x-icon">
 
@@ -15,22 +17,6 @@
 <body>
     <!---------------**Header**--------------->
     <header class="header container-fluid p-0 z-3 ">
-        <!-- <div class="headerContenedor container-xxl"> -->
-        <!---------------**Logito**--------------->
-        <!-- <div class="headerLogito">
-                <a href="./pages/nosotros.html"><img src="./assets/svg/Logito.svg" alt="logito"></a>
-            </div> -->
-        <!---------------**Navbar**--------------->
-        <!-- <nav>
-                <ul>
-                    <li class="headerLi"><a class="headerLiA" href="#">Inicio</a></li>
-                    <li class="headerLi"><a class="headerLiA" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li class="headerLi"><a class="headerLiA" href="./pages/productos.html">Productos</a></li>
-                    <li class="headerLi"><a class="headerLiA" href="./pages/contacto.html">Contacto</a></li>
-                    <li class="headerLi"><a class="headerLiA" href="./pages/carroCompras.html"><img
-                                src="./assets/svg/carroCompras.svg" alt="carritoCompras"></a></li>
-                </ul>
-            </nav> -->
         <nav class="headerContenedor container-xxl navbar navbar-expand-sm p-0 d-flex justify-content-evenly"
             data-bs-theme="dark">
             <!-- <div class="container-fluid d-flex justify-content-evenly bg-success"> -->
@@ -66,22 +52,20 @@
                     <li class="headerLi nav-item">
                         <a class="headerLiA nav-link " href="./pages/contacto.html">Contacto</a>
                     </li>
-                    <!-- <li class="headerLi nav-item"><a class="headerLiA" href="./pages/carroCompras.html"><img
-                                    src="./assets/svg/carroCompras.svg" alt="carritoCompras">
-                            </a>
-                        </li> -->
                 </ul>
-
             </div>
             <!---------------**Icono Carrito**--------------->
             <div class="headerContenedorIconCarrito">
                 <a class="" href="./pages/carroCompras.html">
-                    <img src="./assets/svg/carroCompras.svg" alt="carritoCompras">
+                    <!-- <img src="./assets/svg/carroCompras.svg" alt="carritoCompras"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bag-check-fill"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                    </svg>
                 </a>
             </div>
-            <!-- </div> -->
         </nav>
-        <!-- </div> -->
     </header>
     <!---------------**Mian**--------------->
     <main class="inicioMain container-xxl p-0">
@@ -176,9 +160,10 @@
                     </div>
                     <strong>Nombre Cliente</strong>
                     <div class="InicioMainS2ContenedorComillas">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
                             <path
-                                d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
+                                d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
                         </svg>
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis nobis eum corrupti nesciunt.
@@ -190,9 +175,10 @@
                     </div>
                     <strong>Nombre Cliente</strong>
                     <div class="InicioMainS2ContenedorComillas">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
                             <path
-                                d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
+                                d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
                         </svg>
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis nobis eum corrupti nesciunt.
@@ -204,9 +190,10 @@
                     </div>
                     <strong>Nombre Cliente</strong>
                     <div class="InicioMainS2ContenedorComillas">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
                             <path
-                                d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
+                                d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
                         </svg>
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis nobis eum corrupti nesciunt.
@@ -222,28 +209,102 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam excepturi ab explicabo itaque iste
                     eos magnam omnis fugiat sed rem.</p>
             </div>
-            <!--Imagen novedades-->
-            <div class="inicioMainS3ContenedorImg">
-                <img src="assets/svg/SVGNovedades.svg" alt="imagenSVG">
-            </div>
             <!--novedades-->
-            <article class="inicioMainS3Articulos art1">
-                <img src="assets/img/cumpleanios.png" alt="imagenArticulo1">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A non tenetur nesciunt qui adipisci unde
-                    incidunt molestiae et enim accusantium! </p>
-            </article>
-            <article class="inicioMainS3Articulos art2">
-                <img src="assets/img/salaDeJuegos.png" alt="imagenArticulo1">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit vero ex harum fuga pariatur?</p>
-            </article>
-            <article class="inicioMainS3Articulos art3">
-                <img src="assets/img/personajes.png" alt="imagenArticulo1">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit vero ex harum fuga pariatur?
-                    lorem80</p>
-            </article>
+            <section class="inicioMainS3ContenedorNovedades">
+                <article class="shadow inicioMainS3Articulos art1">
+                    <h3>Lorem ipsum dolor sit amet. <span>Lorem ipsum</span> dolor sit.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A non tenetur nesciunt qui adipisci
+                        unde,</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adip.</p>
+                    <div class="inicioMainS3PublicadoPor">
+                        <img src="./assets/img/foto2.jpg" alt="foto">
+                        <div class="inicioMainS3PublicadoPorDetalles">
+                            <strong>Nombre</strong>
+                            <p class="m-0">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="shadow inicioMainS3Articulos art2">
+                    <div class="inicioMainS3ContenedorImg">
+                        <div style="position:relative;height:0;padding-bottom:56.25%">
+                            <iframe
+                                src="https://embed.ted.com/talks/lang/en/nita_farahany_your_right_to_mental_privacy_in_the_age_of_brain_sensing_tech"
+                                width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%"
+                                frameborder="0" scrolling="no" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <h3>Lorem ipsum dolor sit amet Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
+                    <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vero ex culpa rem cumque
+                        atque!ipsum dolor sit amet consectetur adipisicing elit. Saepe velit vero ex harum fuga
+                        pariatur?
+                    </p>
+                    <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vero ex culpa rem cumque
+                        atque!ips
+                    </p>
+                    <div class="inicioMainS3PublicadoPor">
+                        <img src="./assets/img/equipo1(2).png" alt="foto">
+                        <div class="inicioMainS3PublicadoPorDetalles">
+                            <strong>Nombre</strong>
+                            <p class="m-0">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                    <div class="inicioMainS3PublicadoPor">
+                        <img src="./assets/img/equipo1(1).png" alt="foto">
+                        <div class="inicioMainS3PublicadoPorDetalles">
+                            <strong>Nombre</strong>
+                            <p class="m-0">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                    <a href="https://www.ted.com/talks/barbara_f_walter_is_the_us_headed_towards_another_civil_war?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare"><i class="bi bi-link-45deg">Ted.com</i></a>
+                </article>
+                <article class="shadow inicioMainS3Articulos art3">
+                    <h3>Lorem ipsum dolor sit amet 3 Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. fuga pariatur?
+                        lorem80 lorem20 lorem50</p>
+                    <a href=""><i class="bi bi-link">ver más</i></a>
+                </article>
+                <article class="shadow inicioMainS3Articulos art4">
+                    <div class="inicioMainS3ContenedorImg">
+                        <img src="assets/img/novedades1.png" alt="imagenArticulo1">
+                    </div>
+                    <h3>Lorem ipsum dolor sit amet 4.</h3>
+                    <p>Lorem ipsum dolor sit a0</p>
+                </article>
+                <article class="shadow inicioMainS3Articulos art5">
+                    <div class="inicioMainS3ContenedorImg">
+                        <img src="assets/img/novedades2.png" alt="imagenArticulo1">
+                    </div>
+                    <h3>Lorem icec ececxsce psum <span>dolor sit</span> amet dr efrv3 5.</h3>
+                    <p>Lorem ipsum dolor sit a0</p>
+                </article>
+                <article class="shadow inicioMainS3Articulos art6">
+                    <h3><i class="bi bi-cup-hot-fill"></i>Lorem ipsum dolor <span> wdww sit</span> amet 6.</h3>
+                    <p>Lorem ipsum dolor sit a0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consectetur
+                        perspiciatis ducimus!</p>
+                    <div class="inicioMainS3PublicadoPor">
+                        <img src="./assets/img/equipo1(1).png" alt="foto">
+                        <div class="inicioMainS3PublicadoPorDetalles">
+                            <strong>Nombre</strong>
+                            <p class="m-0">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/track/1rDETmcizen79JghAEm1Se?utm_source=generator&theme=0"
+                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </article>
+                <article class="shadow inicioMainS3Articulos art7">
+                    <iframe
+                        src="https://www.youtube.com/embed/IyIjYuF_HUo?si=jH4CS6CmD5GoAICJ&amp;controls=1&amp;start=6"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <h3><i class="bi bi-earbuds"></i>Lorem ipsum dolor sit amet. 7</h3>
+                    <p>Lorem ipsum dolor sit a0</p>
+                </article>
+            </section>
         </section>
     </main>
     <!---------------**Footer**--------------->

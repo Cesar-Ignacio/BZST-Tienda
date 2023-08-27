@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +11,58 @@
     <link rel="shortcut icon" href="../assets/img/Favicon.png" type="image/x-icon">
 
 </head>
+
 <body>
-    
-    <header class="header">
-        <div class="headerLogito">
-            <a href="./nosotros.html"><img src="../assets/svg/Logito.svg" alt="logito"></a>
-        </div>
-        <nav>
-            <ul>
-                <li class="headerLi"><a class="headerLiA" href="../index.html">Inicio</a></li>
-                <li class="headerLi"><a class="headerLiA" href="nosotros.html">Nosotros</a></li>
-                <li class="headerLi"><a class="headerLiA" href="#">Productos</a></li>
-                <li class="headerLi"><a class="headerLiA" href="contacto.html">Contacto</a></li>
-                <li class="headerLi"><a class="headerLiA" href="carroCompras.html"><img src="../assets/svg/carroCompras.svg" alt="carrito"></a></li>
-            </ul>
+
+    <header class="header container-fluid p-0 z-3 ">
+        <nav class="headerContenedor container-xxl navbar navbar-expand-sm p-0 d-flex justify-content-evenly"
+            data-bs-theme="dark">
+            <!-- <div class="container-fluid d-flex justify-content-evenly bg-success"> -->
+            <!---------------**Icono Menu**--------------->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <!---------------**Logito**--------------->
+            <div class="headerLogito">
+                <a href="nosotros.html">
+                    <img src="../assets/svg/Logito.svg" alt="logito">
+                </a>
+            </div>
+            <!---------------**Navegador**--------------->
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo03">
+                <ul class="navbar-nav m-0 p-1">
+                    <li class="headerLi nav-item">
+                        <a class="headerLiA nav-link " href="../index.html">Inicio</a>
+                    </li>
+                    <li class="headerLi nav-item">
+                        <a class="headerLiA nav-link " href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="headerLi nav-item w-50">
+                        <form class="w-100" role="search">
+                            <input class="form-control  text-center  p-0" type="search" placeholder="Buscar Producto"
+                                aria-label="Search">
+                        </form>
+                    </li>
+                    <li class="headerLi nav-item">
+                        <a class="headerLiA nav-link " href="#">Productos</a>
+                    </li>
+                    <li class="headerLi nav-item">
+                        <a class="headerLiA nav-link " href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!---------------**Icono Carrito**--------------->
+            <div class="headerContenedorIconCarrito">
+                <a class="" href="carroCompras.html">
+                    <!-- <img src="./assets/svg/carroCompras.svg" alt="carritoCompras"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bag-check-fill"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                    </svg>
+                </a>
+            </div>
         </nav>
     </header>
     <main class="productoMain">
@@ -32,9 +71,9 @@
             <h1>Productos destacados</h1>
             <!-- Contenedor de los articulos -->
             <section class="productoMainS1Contenedor">
-                <article class="productoMainS1Producto">  
+                <article class="productoMainS1Producto">
                     <div class="productoMainS1ContenedorImg">
-                        <img src="../assets/img/proOso.jpeg" alt="imgProducto">    
+                        <img src="../assets/img/proOso.jpeg" alt="imgProducto">
                     </div>
                     <div class="productoMainS1InfoProducto">
                         <span>Nombre producto</span>
@@ -43,20 +82,20 @@
                         <a href=""><img src="../assets/svg/carroCompras.svg" alt="carrito"></a>
                     </div>
                 </article>
-                <article class="productoMainS1Producto">  
+                <article class="productoMainS1Producto">
                     <div class="productoMainS1ContenedorImg">
-                        <img src="../assets/img/proMunieca.jpeg" alt="imgProducto">    
+                        <img src="../assets/img/proMunieca.jpeg" alt="imgProducto">
                     </div>
                     <div class="productoMainS1InfoProducto">
                         <span>Nombre producto</span>
-                        <p>Lorem ipsum dolor sit amet.</p> 
+                        <p>Lorem ipsum dolor sit amet.</p>
                         <strong>$0.00</strong>
                         <a href=""><img src="../assets/svg/carroCompras.svg" alt="carrito"></a>
                     </div>
                 </article>
-                <article class="productoMainS1Producto">  
+                <article class="productoMainS1Producto">
                     <div class="productoMainS1ContenedorImg">
-                        <img src="../assets/img/proRobat.jpeg" alt="imgProducto">    
+                        <img src="../assets/img/proRobat.jpeg" alt="imgProducto">
                     </div>
                     <div class="productoMainS1InfoProducto">
                         <span>Nombre producto</span>
@@ -84,7 +123,7 @@
                         <li><a href="#">Categoria</a></li>
                         <li><a href="#">Categoria</a></li>
                     </ul>
-                </div>                
+                </div>
             </section>
             <!-- Sección donde se mostrará todos los productos -->
             <section class="productoMainS2ÇontendorProductos">
@@ -171,7 +210,7 @@
         <!-- Logito -->
         <div class="footerLogitoMapa">
             <a href="./nosotros.html"><img src="../assets/svg/Logito.svg" alt="logito"></a>
-            <a href=""><img src="../assets/svg/googlemaps.svg"alt="mapa"></a>
+            <a href=""><img src="../assets/svg/googlemaps.svg" alt="mapa"></a>
         </div>
         <!-- Redes sociales -->
         <div class="footerRedes">
@@ -192,4 +231,5 @@
 
 
 </body>
+
 </html>
