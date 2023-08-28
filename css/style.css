@@ -1070,6 +1070,7 @@ padding: 05.em
     margin-top:2rem;
     background-color: rgb(0, 0, 0);
     position: relative;
+    padding: 0;
 }
 /* waves */
 .footer::after{
