@@ -1067,11 +1067,25 @@ padding: 05.em
 /*---------------Footer----------------*/
 
 .footer {
-    background-color: rgb(14, 14, 14);
+    margin-top:2rem;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    padding: 0;
 }
-
+/* waves */
+.footer::after{
+    content: "";
+    display: block;
+    color: #00ddfa;
+    background-image: url(../assets/svg/waveFooter3.svg);
+    position: absolute;
+    top:-3rem;
+    width: 100%;
+    height: 3rem;
+    z-index: -1;
+}
 .footerContenedor {
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(0, 0, 0);
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     padding: 0.5rem;
@@ -1099,13 +1113,15 @@ padding: 05.em
 }
 
 .footerContenedor svg {
-    width: 2.8rem;
+    width: 2rem;
     fill: #fff;
     transition: all linear 0.3s;
 }
 
 .footerContenedor svg:hover {
-    filter: drop-shadow(0px 0px 2px #cd07ff) drop-shadow(0px 0px 5px #ffffff);
+    /* filter: drop-shadow(0px 0px 2px yellow); */
+    transform: translateY(-2px);
+    fill: white;
 }
 
 .footerLogitoMapa {
@@ -1116,9 +1132,12 @@ padding: 05.em
 }
 
 #logito {
-    width: 10rem;
-    filter: drop-shadow(0px 0px 2px #00ddfa) drop-shadow(0px 0px 50px #ffffff);
+    width: 10rem;  
+    filter: drop-shadow(-35px 5px 40px rgb(10, 227, 243))
+    drop-shadow(35px -15px 40px rgb(255, 0, 251));
+
 }
+
 
 .footerRedes {
     /* background-color: #7e90a2; */
