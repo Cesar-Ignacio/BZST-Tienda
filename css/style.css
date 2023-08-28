@@ -1209,10 +1209,6 @@ padding: 05.em
 
 @media (max-width: 1222px) {
 
-    body {
-        /* background-color: #00ddfa; */
-    }
-
     /* *********Header******* */
     .header ul {
         width: auto;
