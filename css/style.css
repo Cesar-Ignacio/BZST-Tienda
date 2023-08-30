@@ -285,6 +285,7 @@ padding: 05.em
 .inicioMainS3Articulos p {
     margin-bottom: 0.2rem;
 }
+
 .inicioMainS3ContenedorImg {
     /* background-color: #7704f3; */
     width: 100%;
@@ -376,7 +377,8 @@ padding: 05.em
     grid-row: 4/6;
     grid-column: 5;
 }
-.art7 iframe{
+
+.art7 iframe {
     width: 100%;
 }
 
@@ -582,127 +584,115 @@ padding: 05.em
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.5em;
+    margin-bottom: 1rem;
 }
+
 .productoMainS1 h1 {
     /* padding: 1.2rem 0; */
     font-size: 3.5rem;
     /* background-color: #0F5EA1; */
 }
+
 .productoMainS1Contenedor {
     width: 100%;
     padding: 2em 0;
     height: fit-content;
-    background-color: #241e1e;
+    /* background-color: #241e1e; */
     overflow: hidden;
 }
-.swiper-slide {   
-    width: 20rem;
+
+.swiper-slide {
+    width: 25rem;
     /* border: #020202 solid 2px; */
 }
+
 .productoMainS1Producto {
     /* border: #fa0060 solid 1px; */
     color: white;
     width: 100%;
-    height:auto;
+    height: auto;
     border: yellow solid 1px;
     border-radius: 0.5rem 0.5rem 0 0;
     overflow: hidden;
     box-shadow: 0px 0px 50px 2px rgb(236, 234, 111)
 }
+
 .productoMainS1ContenedorImg {
     background-color: rgba(255, 0, 0, 0.663);
     width: 100%;
+    /* El alto de pagina se adapta  a la imagen height: auto; */
+
 }
+
 .productoMainS1ContenedorImg img {
     width: 100%;
     height: 100%;
-    object-fit: cover;   
+    object-fit: cover;
 }
+
 .productoMainS1InfoProducto {
-    background-image: linear-gradient(to top, #d7d2cc 0%, #304352 10%);    font-weight: 300;
+    background-image: linear-gradient(to top, #d7d2cc 0%, #304352 10%);
+    font-weight: 300;
     text-align: center;
-    padding-bottom:0.5em;
+    padding-bottom: 0.5em;
 }
+
 .productoMainS1InfoProducto span {
     font-size: 1.5rem;
 }
-.productoMainS1InfoProducto p{
-    font-size: 1rem; 
+
+.productoMainS1InfoProducto p {
+    font-size: 1rem;
 }
-.productoMainS1InfoProducto a{
+
+.productoMainS1InfoProducto a {
     /* background-color: #0f2a41; */
     display: inline-block;
     width: 2rem;
-    padding:0.1em;
+    padding: 0.1em;
 }
-.productoMainS1InfoProducto svg{
+
+.productoMainS1InfoProducto svg {
     fill: #fafafa;
 }
+
 .productoMainS2 {
     font-family: 'Josefin Sans', sans-serif;
-    /* background-color: #2f410f; */
-    padding: 0.5em;
-    display: flex;
-    gap: 0.2rem;
+    /* background-color: #e71c09; */
 }
 
-.productoMainS2Categorias {
-    background-color: rgba(53, 53, 55, 0.807);
-    padding: 0.5em;
+.productoMainS2Filtro {
+    background-color: white;
+    padding-left: 1.5em ;
+}
+.dropbtn {
+
+    width: 10rem;
+}
+.productoMainS2Filtro button{
+    padding: 0.5em 2em;
+}
+
+.productoMainS2ContendorProductos {
+    border: #00ddfa solid 1px;
     color: white;
-    line-height: 2rem;
-    width: 20%;
-    height: 50%;
-}
+    /* padding: 0; */
 
-.productoMainS2Categorias input {
-    width: 100%;
-    height: 2.5em;
-    margin: 0.5rem 0;
-    padding: 0.2em;
-    border-radius: .3125rem;
-    border-style: none;
-    box-shadow: 0px 0px 5px 2px #156bb589;
-}
-
-.productoMainS2Contenedor {
-    background-color: rgba(60, 53, 53, 0.665);
-    border-radius: 0.5rem;
-}
-
-.productoMainS2Contenedor li {
-    list-style: none;
-}
-
-.productoMainS2Contenedor a {
-    text-decoration: none;
-    color: white;
-    margin-left: 2rem;
-}
-
-.productoMainS2ÇontendorProductos {
-    background: linear-gradient(to top right, rgba(166, 18, 196, 0.549), rgba(66, 162, 163, 0.524) 50%, rgba(17, 37, 213, 0.584));
-    color: white;
-    padding: 1rem;
-    width: 80%;
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    column-gap: 0.5rem;
-    row-gap: 0.5rem;
 }
 
 .productoMainS2Producto {
-    background-color: transparent;
-    border-radius: .3125rem;
-    overflow: hidden;
+    /* background-color: blue; */
+    border-radius: 0.2rem;
+    border: black solid 1px;
+    /* overflow: hidden; */
+    /* width: 15rem; */
+    padding: 0;
 }
 
 .productoMainS2ContenedorImg {
     /* background-color: #5C7C8D; */
     width: 100%;
-    height: 22rem;
+    /* height: 10rem; */
 }
 
 .productoMainS2ContenedorImg img {
@@ -1073,23 +1063,25 @@ padding: 05.em
 /*---------------Footer----------------*/
 
 .footer {
-    margin-top:2rem;
+    margin-top: 2rem;
     background-color: rgb(0, 0, 0);
     position: relative;
     padding: 0;
 }
+
 /* waves */
-.footer::after{
+.footer::after {
     content: "";
     display: block;
     color: #00ddfa;
     background-image: url(../assets/svg/waveFooter3.svg);
     position: absolute;
-    top:-3rem;
+    top: -3rem;
     width: 100%;
     height: 3rem;
     z-index: -1;
 }
+
 .footerContenedor {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -1138,9 +1130,8 @@ padding: 05.em
 }
 
 #logito {
-    width: 10rem;  
-    filter: drop-shadow(-35px 5px 40px rgb(10, 227, 243))
-    drop-shadow(35px -15px 40px rgb(255, 0, 251));
+    width: 10rem;
+    filter: drop-shadow(-35px 5px 40px rgb(10, 227, 243)) drop-shadow(35px -15px 40px rgb(255, 0, 251));
 
 }
 
@@ -1250,21 +1241,30 @@ padding: 05.em
         grid-column: 4/6;
     }
 
+    /**********Producto******* */
+    .productoMainS2 {
+        flex-direction: column;
+    }
+
 }
 
-@media (max-width:800px){
-     /* *********Productos******* */
-     .swiper-slide {   
+@media (max-width:800px) {
+
+    /* *********Productos******* */
+    .swiper-slide {
         width: 15rem;
     }
 }
+
 @media (max-width: 630px) {
+
     /**********Inicio******* */
     .inicioMainS3ContenedorImg {
         /* background-color: #7704f3; */
-    
+
         height: 70%;
     }
+
     .art1 {
         grid-column: 1/6;
         grid-row: 1;
@@ -1299,32 +1299,35 @@ padding: 05.em
         grid-row: 7;
         grid-column: 1/6;
     }
-    .art7 iframe{
+
+    .art7 iframe {
         height: 15rem;
     }
 
     /* *********Productos******* */
-    .swiper-slide {   
+    .swiper-slide {
         width: 10rem;
     }
+
     .productoMainS1InfoProducto span {
-      
+
         font-size: 1rem;
     }
-    .productoMainS1InfoProducto p{
-     
+
+    .productoMainS1InfoProducto p {
+
         font-size: 0.8rem;
         margin: 0;
-        
+
     }
 
     .productoMainS1InfoProducto img {
-       
+
         max-width: 1.5rem;
         max-height: 1.5rem;
-      
+
     }
-   
+
     /* *********Footer******* */
     .footer {
         grid-template-rows: repeat(4, auto);

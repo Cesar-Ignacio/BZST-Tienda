@@ -103,7 +103,7 @@
                     <div class="swiper-slide">
                         <article class="productoMainS1Producto">
                             <div class="productoMainS1ContenedorImg">
-                                <img src="../assets/img/proOso.jpeg" alt="imgProducto">
+                                <img src="../assets/img/proBuzz.jpg" alt="imgProducto">
                             </div>
                             <div class="productoMainS1InfoProducto">
                                 <span>Nombre producto</span>
@@ -129,7 +129,7 @@
                     <div class="swiper-slide">
                         <article class="productoMainS1Producto">
                             <div class="productoMainS1ContenedorImg">
-                                <img src="../assets/img/proOso.jpeg" alt="imgProducto">
+                                <img src="../assets/img/proPelota.jpeg" alt="imgProducto">
                             </div>
                             <div class="productoMainS1InfoProducto">
                                 <span>Nombre producto</span>
@@ -155,7 +155,7 @@
                     <div class="swiper-slide">
                         <article class="productoMainS1Producto">
                             <div class="productoMainS1ContenedorImg">
-                                <img src="../assets/img/proOso.jpeg" alt="imgProducto">
+                                <img src="../assets/img/proRobat.jpeg" alt="imgProducto">
                             </div>
                             <div class="productoMainS1InfoProducto">
                                 <span>Nombre producto</span>
@@ -184,94 +184,164 @@
         </section>
 
         <!-- Lista de productos -->
-        <section class="productoMainS2">
-            <!-- Sección donde se mostrará las categorías -->
-            <section class="productoMainS2Categorias">
-                <h2>Categorías</h2>
-                <input type="search" name="" id="" placeholder="buscar producto">
-                <div class="productoMainS2Contenedor">
-                    <ul>
-                        <li><a href="#">Categoria</a></li>
-                        <li><a href="#">Categoria</a></li>
-                        <li><a href="#">Categoria</a></li>
-                        <li><a href="#">Categoria</a></li>
-                        <li><a href="#">Categoria</a></li>
-                        <li><a href="#">Categoria</a></li>
-                        <li><a href="#">Categoria</a></li>
-                        <li><a href="#">Categoria</a></li>
-                    </ul>
-                </div>
-            </section>
-            <!-- Sección donde se mostrará todos los productos -->
-            <section class="productoMainS2ÇontendorProductos">
-                <article class="productoMainS2Producto">
-                    <div class="productoMainS2ContenedorImg">
-                        <img src="../assets/img/proMunieca.jpeg" alt="imgProducto">
+        <section class="productoMainS2 container-xxl">
+            <div class="row ">
+                <!-- Sección donde se mostrará las categorías -->
+                <section class="productoMainS2Filtro  d-flex  flex-row  justify-content-evenly  
+                align-items-center flex-wrap flex-md-column justify-content-md-start align-items-md-start
+                 gap-2 col-ms-12 col-md-3 col-lg-3 col-xl-2">
+                    <h2 class="text-center m-0"><i class="bi bi-sliders2-vertical"></i>Filtros</h2>
+                    <!-- Categoias -->
+                    <div class=" dropdown dropbtn">
+                        <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorias
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark ps-3 w-100">
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Categoria
+                                </label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Categoria
+                                </label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Categoria
+                                </label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Categoria
+                                </label>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="productoMainS2InfoProducto">
-                        <span>Nombre producto</span>
-                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                        <strong>$0.00</strong>
-                        <img src="../assets/svg/carroCompras.svg" alt="carrito">
+                    <!-- Marcas -->
+                    <div class=" dropdown dropbtn">
+                        <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Marcas
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark ps-3 w-100">
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Categoria
+                                </label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Categoria
+                                </label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Categoria
+                                </label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Categoria
+                                </label>
+                            </li>
+                        </ul>
                     </div>
-                </article>
-                <article class="productoMainS2Producto">
-                    <div class="productoMainS2ContenedorImg">
-                        <img src="../assets/img/proPelota.jpeg" alt="imgProducto">
+                    <!-- Rango de Precio -->
+                    <div class="productoMainS2FiltroRangoPrecio">
+                        <p>Rango de precio</p>
+                        <input type="range" name="" id="" max="50000" min="3500">
                     </div>
-                    <div class="productoMainS2InfoProducto">
-                        <span>Nombre producto</span>
-                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                        <strong>$0.00</strong>
-                        <img src="../assets/svg/carroCompras.svg" alt="carrito">
+                    <!-- Boton limpiar filtros -->
+                    <button type="button" class="btn btn-dark">Limpiar Filtro</button>
+
+                </section>
+                <!-- Sección donde se mostrará todos los productos -->
+                <section class="container-fluid productoMainS2ContendorProductos col-sm-12 col-md-9  col-lg-9 col-xl-10">
+                    <div class="row gap-3 p-1 " >
+                        <article class="productoMainS2Producto  col">
+                            <div class="productoMainS2ContenedorImg">
+                                <img src="../assets/img/proBuzz.jpg" alt="imgProducto">
+                            </div>
+                            <div class="productoMainS2InfoProducto">
+                                <span>Nombre producto</span>
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                                <strong>$0.00</strong>
+                                <img src="../assets/svg/carroCompras.svg" alt="carrito">
+                            </div>
+                        </article>
+                        <article class="productoMainS2Producto  col">
+                            <div class="productoMainS2ContenedorImg">
+                                <img src="../assets/img/proBuzz.jpg" alt="imgProducto">
+                            </div>
+                            <div class="productoMainS2InfoProducto">
+                                <span>Nombre producto</span>
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                                <strong>$0.00</strong>
+                                <img src="../assets/svg/carroCompras.svg" alt="carrito">
+                            </div>
+                        </article>
+                        <article class="productoMainS2Producto  col ">
+                            <div class="productoMainS2ContenedorImg">
+                                <img src="../assets/img/proBuzz.jpg" alt="imgProducto">
+                            </div>
+                            <div class="productoMainS2InfoProducto">
+                                <span>Nombre producto</span>
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                                <strong>$0.00</strong>
+                                <img src="../assets/svg/carroCompras.svg" alt="carrito">
+                            </div>
+                        </article>
                     </div>
-                </article>
-                <article class="productoMainS2Producto">
-                    <div class="productoMainS2ContenedorImg">
-                        <img src="../assets/img/proBuzz.jpg" alt="imgProducto">
+                    <div class="row gap-3 p-1  " >
+                        <article class="productoMainS2Producto  col">
+                            <div class="productoMainS2ContenedorImg">
+                                <img src="../assets/img/proOso1.jpg" alt="imgProducto">
+                            </div>
+                            <div class="productoMainS2InfoProducto">
+                                <span>Nombre producto</span>
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                                <strong>$0.00</strong>
+                                <img src="../assets/svg/carroCompras.svg" alt="carrito">
+                            </div>
+                        </article>
+                        <article class="productoMainS2Producto  col">
+                            <div class="productoMainS2ContenedorImg">
+                                <img src="../assets/img/proOso.jpeg" alt="imgProducto">
+                            </div>
+                            <div class="productoMainS2InfoProducto">
+                                <span>Nombre producto</span>
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                                <strong>$0.00</strong>
+                                <img src="../assets/svg/carroCompras.svg" alt="carrito">
+                            </div>
+                        </article>
+                        <article class="productoMainS2Producto  col ">
+                            <div class="productoMainS2ContenedorImg">
+                                <img src="../assets/img/proBuzz.jpg" alt="imgProducto">
+                            </div>
+                            <div class="productoMainS2InfoProducto">
+                                <span>Nombre producto</span>
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                                <strong>$0.00</strong>
+                                <img src="../assets/svg/carroCompras.svg" alt="carrito">
+                            </div>
+                        </article>
                     </div>
-                    <div class="productoMainS2InfoProducto">
-                        <span>Nombre producto</span>
-                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                        <strong>$0.00</strong>
-                        <img src="../assets/svg/carroCompras.svg" alt="carrito">
-                    </div>
-                </article>
-                <article class="productoMainS2Producto">
-                    <div class="productoMainS2ContenedorImg">
-                        <img src="../assets/img/proOso.jpeg" alt="imgProducto">
-                    </div>
-                    <div class="productoMainS2InfoProducto">
-                        <span>Nombre producto</span>
-                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                        <strong>$0.00</strong>
-                        <img src="../assets/svg/carroCompras.svg" alt="carrito">
-                    </div>
-                </article>
-                <article class="productoMainS2Producto">
-                    <div class="productoMainS2ContenedorImg">
-                        <img src="../assets/img/proMesa.jpg" alt="imgProducto">
-                    </div>
-                    <div class="productoMainS2InfoProducto">
-                        <span>Nombre producto</span>
-                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                        <strong>$0.00</strong>
-                        <img src="../assets/svg/carroCompras.svg" alt="carrito">
-                    </div>
-                </article>
-                <article class="productoMainS2Producto">
-                    <div class="productoMainS2ContenedorImg">
-                        <img src="../assets/img/proArania.jpg" alt="imgProducto">
-                    </div>
-                    <div class="productoMainS2InfoProducto">
-                        <span>Nombre producto</span>
-                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                        <strong>$0.00</strong>
-                        <img src="../assets/svg/carroCompras.svg" alt="carrito">
-                    </div>
-                </article>
-            </section>
+                </section>
+            </div>
         </section>
+
     </main>
     <footer class="footer container-fluid ">
         <div class="footerContenedor container-xxl">
