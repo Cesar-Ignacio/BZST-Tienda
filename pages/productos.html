@@ -69,7 +69,7 @@
     </header>
     <main class="productoMain container-xxl p-0">
         <!-- Lista de productos destacados -->
-        <section class="productoMainS1">
+        <section class="productoMainS1 d-flex flex-column align-items-center">
             <h1>Productos destacados</h1>
             <!-- Contenedor de los articulos --><!-- Swiper -->
             <div class="productoMainS1Contenedor mySwiper">
@@ -186,7 +186,7 @@
         <!-- Lista de productos -->
         <section class="productoMainS2 container-xxl">
             <div class="row ">
-                <!-- Sección donde se mostrará las categorías -->
+                <!-- Sección Filtros -->
                 <section class="productoMainS2Filtro  d-flex  flex-row  justify-content-evenly  
                 align-items-center flex-wrap flex-md-column justify-content-md-start align-items-md-start
                  gap-2 col-ms-12 col-md-3 col-lg-3 col-xl-2">
@@ -276,8 +276,16 @@
                             <div class="productoMainS2InfoProducto">
                                 <span>Nombre producto</span>
                                 <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                                <strong>$0.00</strong>
-                                <img src="../assets/svg/carroCompras.svg" alt="carrito">
+                                <div class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center" >
+                                    <strong>$ 0.00</strong>
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-bag-plus-fill"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </article>
                         <article class="productoMainS2Producto  col">
