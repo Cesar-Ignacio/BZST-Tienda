@@ -190,9 +190,9 @@
                 <section class="productoMainS2Filtro  d-flex  flex-row  justify-content-evenly  
                 align-items-center flex-wrap flex-md-column justify-content-md-start align-items-md-start
                  gap-2 col-ms-12 col-md-3 col-lg-3 col-xl-2">
-                    <h2 class="text-center m-0"><i class="bi bi-sliders2-vertical"></i>Filtros</h2>
+                    <h2 class="text-center m-0 d-sm-block d-none"><i class="bi bi-sliders2-vertical"></i>Filtros</h2>
                     <!-- Categoias -->
-                    <div class=" dropdown dropbtn">
+                    <div class=" dropdown dropbtn d-sm-block d-none">
                         <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Categorias
@@ -225,7 +225,7 @@
                         </ul>
                     </div>
                     <!-- Marcas -->
-                    <div class=" dropdown dropbtn">
+                    <div class=" dropdown dropbtn d-sm-block d-none">
                         <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Marcas
@@ -258,7 +258,7 @@
                         </ul>
                     </div>
                     <!-- Rango de edad -->
-                    <div class=" dropdown dropbtn">
+                    <div class=" dropdown dropbtn d-sm-block d-none">
                         <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Rago de edad
@@ -291,13 +291,130 @@
                         </ul>
                     </div>
                     <!-- Rango de Precio -->
-                    <div class="productoMainS2FiltroRangoPrecio">
+                    <div class="productoMainS2FiltroRangoPrecio d-sm-block d-none">
                         <p>Rango de precio</p>
                         <input type="range" name="" id="" max="50000" min="3500">
                     </div>
                     <!-- Boton limpiar filtros -->
-                    <button type="button" class="btn btn-dark">Limpiar Filtro</button>
+                    <button type="button" class="btn btn-dark d-sm-block d-none">Limpiar Filtro</button>
+                    <!-- Boton modal para sm -->
+                    <button class="btnModalSm btn btn-outline-secondary d-block d-sm-none px-4" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-sliders2-vertical"></i> Filtros</button>
 
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h2 class="offcanvas-title text-white" id="offcanvasRightLabel"><i class="bi bi-sliders2-vertical"></i>Fitros</h2>
+                            <button type="button" class="btn-close bg-success" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <!-- Categoias -->
+                        <div class=" dropdown mb-1">
+                            <button class="btn btn-secondary dropdown-toggle w-100" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark ps-3 w-100">
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Marcas -->
+                        <div class=" dropdown mb-1">
+                            <button class="btn btn-secondary dropdown-toggle w-100" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Marcas
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark ps-3 w-100">
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Rango de edad -->
+                        <div class=" dropdown mb-1">
+                            <button class="btn btn-secondary dropdown-toggle w-100" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Rago de edad
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark ps-3 w-100">
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Categoria
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Rango de Precio -->
+                        <div class="productoMainS2FiltroRangoPrecioModal">
+                            <p class="text-white">Rango de precio</p>
+                            <input type="range" name="" id="" max="50000" min="3500">
+                        </div>
+                        <!-- Boton limpiar filtros -->
+                        <button type="button" class="btn btn-dark">Limpiar Filtro</button>
+                    </div>
                 </section>
                 <!-- Sección donde se mostrará todos los productos -->
                 <section
@@ -310,10 +427,9 @@
                             <div class="productoMainS2InfoProducto">
                                 <span>Nombre producto</span>
                                 <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                                <div
-                                    class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
+                                <div class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
                                     <strong>$ 0.00</strong>
-                                    <div class="productoMainS2InfoProductoContenedorIcon">
+                                    <div class="productoMainS2InfoProductoContenedorIcon d-flex">
                                         <a href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-bag-plus-fill"
                                                 viewBox="0 0 16 16">
@@ -322,8 +438,8 @@
                                             </svg>
                                         </a>
                                         <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" 
-                                                fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                class="bi bi-share" viewBox="0 0 16 16">
                                                 <path
                                                     d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
                                             </svg>
@@ -349,7 +465,7 @@
                                 <div
                                     class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
                                     <strong>$ 0.00</strong>
-                                    <div class="productoMainS2InfoProductoContenedorIcon">
+                                    <div class="productoMainS2InfoProductoContenedorIcon d-flex">
                                         <a href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-bag-plus-fill"
                                                 viewBox="0 0 16 16">
@@ -382,10 +498,9 @@
                             <div class="productoMainS2InfoProducto">
                                 <span>Nombre producto</span>
                                 <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                                <div
-                                    class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
+                                <div class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
                                     <strong>$ 0.00</strong>
-                                    <div class="productoMainS2InfoProductoContenedorIcon">
+                                    <div class="productoMainS2InfoProductoContenedorIcon d-flex">
                                         <a href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-bag-plus-fill"
                                                 viewBox="0 0 16 16">
@@ -420,10 +535,9 @@
                             <div class="productoMainS2InfoProducto">
                                 <span>Nombre producto</span>
                                 <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                                <div
-                                    class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
+                                <div  class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
                                     <strong>$ 0.00</strong>
-                                    <div class="productoMainS2InfoProductoContenedorIcon">
+                                    <div class="productoMainS2InfoProductoContenedorIcon d-flex">
                                         <a href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-bag-plus-fill"
                                                 viewBox="0 0 16 16">
@@ -456,10 +570,9 @@
                             <div class="productoMainS2InfoProducto">
                                 <span>Nombre producto</span>
                                 <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                                <div
-                                    class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
+                                <div class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
                                     <strong>$ 0.00</strong>
-                                    <div class="productoMainS2InfoProductoContenedorIcon">
+                                    <div class="productoMainS2InfoProductoContenedorIcon d-flex">
                                         <a href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-bag-plus-fill"
                                                 viewBox="0 0 16 16">
@@ -492,10 +605,9 @@
                             <div class="productoMainS2InfoProducto">
                                 <span>Nombre producto</span>
                                 <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
-                                <div
-                                    class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
+                                <div class="productoMainS2InfoProductoPrecioIcon py-1  d-flex justify-content-evenly align-items-center flex-column flex-sm-row">
                                     <strong>$ 0.00</strong>
-                                    <div class="productoMainS2InfoProductoContenedorIcon">
+                                    <div class="productoMainS2InfoProductoContenedorIcon d-flex">
                                         <a href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-bag-plus-fill"
                                                 viewBox="0 0 16 16">
@@ -525,7 +637,6 @@
                 </section>
             </div>
         </section>
-
     </main>
     <footer class="footer container-fluid ">
         <div class="footerContenedor container-xxl">
