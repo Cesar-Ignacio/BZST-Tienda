@@ -1334,21 +1334,23 @@ padding: 05.em
     /* *********Footer******* */
     .footer {
         grid-template-rows: repeat(4, auto);
-        row-gap: 1rem;
     }
 
     .footerPagos {
         grid-column: span 3;
         grid-row: 2;
+        padding: 1rem 0em;
     }
 
     .footerLogitoMapa {
         grid-column: span 3;
         grid-row: 1;
+        padding: 1rem 0em;
     }
 
     .footerRedes {
         grid-column: span 3;
+        padding: 1rem 0em;
     }
 
     .footerCopyright {
