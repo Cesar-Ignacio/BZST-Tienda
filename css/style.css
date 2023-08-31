@@ -146,6 +146,8 @@ padding: 05.em
 .inicioMainS2 {
     /* background: linear-gradient(to top left, rgb(102, 30, 102),rgba(38, 185, 196, 0.583) 50%, rgb(102, 30, 102) ); */
     padding: 0.5em;
+    border: #00ddfa solid 0px;
+    overflow: hidden; /*Para que el contenido que se desborde, no genere un  'after'*/
 }
 
 .inicioMainS2Clientes {
@@ -174,7 +176,7 @@ padding: 05.em
 }
 
 .InicioMainS2Mensajes {
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-image: linear-gradient(to top right, #84a8bfea 0%, #f8bcf8ee 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,7 +193,7 @@ padding: 05.em
 .InicioMainS2Mensajes::after {
     content: "";
     display: block;
-    /* background-color: red; */
+    background-color: transparent;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -279,7 +281,8 @@ padding: 05.em
 }
 
 .inicioMainS3Articulos h3 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: calc(1vw + 1rem);
 }
 
 .inicioMainS3Articulos p {
@@ -326,7 +329,7 @@ padding: 05.em
     grid-row: 1/4;
 }
 
-.art1 span {
+.art1 em {
     background-color: #a42bb963;
 }
 
@@ -359,8 +362,8 @@ padding: 05.em
     font-size: 1.5rem;
 }
 
-.art5 span {
-    padding-top: 0.2em;
+.art5 em {
+    
     background-color: #1577cdc9;
 }
 
@@ -369,7 +372,7 @@ padding: 05.em
     grid-column: 5;
 }
 
-.art6 span {
+.art6 em {
     background-color: yellow;
 }
 
@@ -412,7 +415,7 @@ padding: 05.em
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation-name: cesar;
+    animation-name: animacionFondo;
     animation-duration: 5s;
     animation-iteration-count: 1;
 }
@@ -579,7 +582,9 @@ padding: 05.em
 .productoMainS1 {
     font-family: 'Josefin Sans', sans-serif;
     color: black;
-    /* background-color: #0f2a41; */
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+    background-blend-mode: lighten;
     padding: 0.5em;
 }
 
@@ -598,47 +603,48 @@ padding: 05.em
 }
 
 .swiper-slide {
-    width: 20rem;
+    width: 18rem;
     /* border: #020202 solid 2px; */
 }
 
 .productoMainS1Producto {
-    /* border: #fa0060 solid 1px; */
     color: white;
     width: 100%;
     height: auto;
-    border: yellow solid 1px;
-    border-radius: 0.5rem 0.5rem 0 0;
+    border-radius: 0.5rem;
     overflow: hidden;
-    box-shadow: 0px 0px 50px 2px rgb(236, 234, 111)
+    box-shadow: 0px 0px 50px 5px rgb(252, 252, 252);
+
 }
 
+
 .productoMainS1ContenedorImg {
-    background-color: rgba(255, 0, 0, 0.663);
+
     width: 100%;
     /* El alto de pagina se adapta  a la imagen height: auto; */
 
 }
+
 .productoMainS1ContenedorImg img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .productoMainS1InfoProducto {
-    background-image: linear-gradient(to top, #d7d2cc 0%, #304352 10%);
-    font-weight: 300;
+    /* background-color: #b9da00; */
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     text-align: center;
     padding-bottom: 0.5em;
 }
 
 .productoMainS1InfoProducto span {
-    font-size: 1.5rem;
+ 
+    font-size: calc(0.5vw + 1rem);
+    /* background-color: #00ddfa; */
 }
 
 .productoMainS1InfoProducto p {
-    font-size: 1rem;
-    
+    font-size: calc(0.5vw + 0.8rem);
 }
 
 .productoMainS1InfoProducto a {
@@ -654,35 +660,36 @@ padding: 05.em
 
 .productoMainS2 {
     font-family: 'Josefin Sans', sans-serif;
-    /* background-color: #e71c09; */
+  
+    padding-top: 1rem;
 }
 
 .productoMainS2Filtro {
-    background-color: white;
-    padding-left: 1.5em ;
+    padding: 0.5em 1.5em;
 }
+
 .dropbtn {
 
     width: 10rem;
 }
-.productoMainS2Filtro button{
+
+.productoMainS2Filtro button {
     padding: 0.5em 2em;
 }
 
 .productoMainS2ContendorProductos {
-    border: #00ddfa solid 1px;
+    border: #00ddfa solid 0px;
     color: white;
     /* padding: 0; */
 
 }
 
 .productoMainS2Producto {
-    /* background-color: blue; */
-    border-radius: 0.2rem;
-    border: black solid 1px;
-    /* overflow: hidden; */
-    /* width: 15rem; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: rgb(247, 3, 166) solid 1px;
     padding: 0;
+
 }
 
 .productoMainS2ContenedorImg {
@@ -698,25 +705,37 @@ padding: 05.em
 }
 
 .productoMainS2InfoProducto {
-    background-color: rgba(79, 13, 13, 0.426);
-    font-weight: 1;
+    background: linear-gradient(to left, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
     width: 100%;
     padding: 0.5rem;
+    position: relative;
+    color: white;
 }
-
 .productoMainS2InfoProducto span {
     font-size: calc(0.8vw + 0.8rem);
 }
-.productoMainS2InfoProducto p{
+
+.productoMainS2InfoProducto p {
     margin: 0;
-
     font-size: calc(0.5vw + 0.5rem);
-} 
+}
 
-.productoMainS2InfoProductoPrecioIcon a{
+.productoMainS2InfoProductoPrecioIcon a {
     /* background-color: #00ddfa; */
-    width: 1.8rem;
+    width: 2.2rem;
     display: inline-block;
+    border: rgb(255, 255, 255) solid 2px;
+    box-shadow: 0px 0px 7px 1px rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 0.2em 0.5em 0.3em  0.5em;
+    
+}
+
+.productoMainS2InfoProductoPrecioIcon svg {
+    filter: drop-shadow(-4px 5px 8px rgb(10, 227, 243))
+     drop-shadow(4px -5px 8px rgb(255, 0, 251));
+    fill: white;
 }
 
 /*----------------Contacto---------------------*/
@@ -1178,7 +1197,7 @@ padding: 05.em
 
 
 /*Animación Nosotros*/
-@keyframes cesar {
+@keyframes animacionFondo {
     0% {
         background-position-y: 8px;
         background-image: url(../assets/img/paraFondoTexto3.jpg);
@@ -1240,10 +1259,9 @@ padding: 05.em
         grid-row: 4;
         grid-column: 4/6;
     }
-
-    /**********Producto******* */
-    .productoMainS2 {
-        flex-direction: column;
+    .InicioMainS2Mensajes::after {
+       
+        transform: rotateZ(0deg);
     }
 
 }
@@ -1309,24 +1327,6 @@ padding: 05.em
         width: 10rem;
     }
 
-    .productoMainS1InfoProducto span {
-
-        font-size: 1rem;
-    }
-
-    .productoMainS1InfoProducto p {
-
-        font-size: 0.8rem;
-        margin: 0;
-
-    }
-
-    .productoMainS1InfoProducto img {
-
-        max-width: 1.5rem;
-        max-height: 1.5rem;
-
-    }
 
     /* *********Footer******* */
     .footer {
