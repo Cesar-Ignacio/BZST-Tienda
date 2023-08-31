@@ -1352,3 +1352,11 @@ padding: 05.em
         grid-column: span 3;
     }
 }
+
+@media (max-width:480px){
+    /* Producto */
+    .productoMainS2InfoProductoPrecioIcon a {
+        width: 1.6rem;
+        padding: 0em 0.4em 0.2em 0.4em; 
+    }
+}
