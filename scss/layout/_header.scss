@@ -56,22 +56,23 @@
 }
 
 .headerContenedorIconCarrito {
-    /* background-color: red; */
     padding: 0.4em 0.5em 0.6em 0.5em;
     margin: 0.5rem;
-    /*para que pegue a los costados en dimensiones pequeñas*/
     border-radius: 50%;
     transition: all linear 0.5s;
-    border: black solid 1px;
-}
-
-.headerContenedorIconCarrito svg {
-    fill: #ffffff;
-    width: 2rem;
-}
-
-.headerContenedorIconCarrito:hover {
-
-    border-color: fuchsia;
-    box-shadow: 0px 0px .7rem .1rem #f304f3;
+    border: $colorHeader solid 1px;
+    a{
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        svg{
+            fill: #fff;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &:hover{
+        border-color: fuchsia;
+        box-shadow: 0px 0px .7rem .1rem #f304f3;
+    }
 }

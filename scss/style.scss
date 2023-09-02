@@ -998,112 +998,7 @@
 
 /*---------------Footer----------------*/
 
-.footer {
-    margin-top: 2rem;
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    padding: 0;
-}
-
-/* waves */
-.footer::after {
-    content: "";
-    display: block;
-    color: #00ddfa;
-    background-image: url(../assets/svg/waveFooter3.svg);
-    position: absolute;
-    top: -3rem;
-    width: 100%;
-    height: 3rem;
-    z-index: -1;
-}
-
-.footerContenedor {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.footer h3 {
-    font-size: 1.2rem;
-}
-
-.footerPagos {
-    /* background-color: #0F5EA1; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.contenedorPagos {
-    /* background-color: red; */
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.footerContenedor svg {
-    width: 2rem;
-    fill: #fff;
-    transition: all linear 0.3s;
-}
-
-.footerContenedor svg:hover {
-    /* filter: drop-shadow(0px 0px 2px yellow); */
-    transform: translateY(-2px);
-    fill: white;
-}
-
-.footerLogitoMapa {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#logito {
-    width: 10rem;
-    filter: drop-shadow(-35px 5px 40px rgb(10, 227, 243)) drop-shadow(35px -15px 40px rgb(255, 0, 251));
-}
-
-
-.footerRedes {
-    /* background-color: #7e90a2; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.contenedorRedes {
-    /* background-color: red; */
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.footerCopyright {
-    grid-column: span 3;
-    /* background-color: #8a6060; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footerCopyright p {
-    margin: 0;
-    padding-top: 0.1em;
-
-}
-
-.footerCopyright img {
-    width: 18px;
-}
+@import "./layout/footer.scss";
 
 
 
@@ -1252,18 +1147,15 @@
     .footerPagos {
         grid-column: span 3;
         grid-row: 2;
-        padding: 1rem 0em;
     }
 
     .footerLogitoMapa {
         grid-column: span 3;
         grid-row: 1;
-        padding: 1rem 0em;
     }
 
     .footerRedes {
         grid-column: span 3;
-        padding: 1rem 0em;
     }
 
     .footerCopyright {

@@ -49,21 +49,22 @@
         padding: 0.2em 1em; }
 
 .headerContenedorIconCarrito {
-  /* background-color: red; */
   padding: 0.4em 0.5em 0.6em 0.5em;
   margin: 0.5rem;
-  /*para que pegue a los costados en dimensiones pequeñas*/
   border-radius: 50%;
   transition: all linear 0.5s;
-  border: black solid 1px; }
-
-.headerContenedorIconCarrito svg {
-  fill: #ffffff;
-  width: 2rem; }
-
-.headerContenedorIconCarrito:hover {
-  border-color: fuchsia;
-  box-shadow: 0px 0px .7rem .1rem #f304f3; }
+  border: #1E1D1D solid 1px; }
+  .headerContenedorIconCarrito a {
+    display: block;
+    width: 2rem;
+    height: 2rem; }
+    .headerContenedorIconCarrito a svg {
+      fill: #fff;
+      width: 100%;
+      height: 100%; }
+  .headerContenedorIconCarrito:hover {
+    border-color: fuchsia;
+    box-shadow: 0px 0px .7rem .1rem #f304f3; }
 
 /*---------------Main----------------*/
 /*----------------Inicio---------------------*/
@@ -893,92 +894,71 @@
 /*---------------Footer----------------*/
 .footer {
   margin-top: 2rem;
-  background-color: black;
+  background-color: #1E1D1D;
+  font-family: "Josefin Sans", sans-serif;
   position: relative;
   padding: 0; }
-
-/* waves */
-.footer::after {
-  content: "";
-  display: block;
-  color: #00ddfa;
-  background-image: url(../assets/svg/waveFooter3.svg);
-  position: absolute;
-  top: -3rem;
-  width: 100%;
-  height: 3rem;
-  z-index: -1; }
+  .footer #waveFooter {
+    fill: #1E1D1D;
+    position: absolute;
+    background-color: transparent;
+    top: -3rem;
+    width: 100%;
+    height: 3rem;
+    z-index: -1; }
 
 .footerContenedor {
-  background-color: black;
   color: white;
-  font-family: 'Josefin Sans', sans-serif;
   padding: 0.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
-
-.footer h3 {
-  font-size: 1.2rem; }
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem; }
+  .footerContenedor h3 {
+    font-size: 1.2rem; }
+  .footerContenedor svg {
+    width: 2rem;
+    fill: #fff;
+    transition: all linear 0.3s; }
+    .footerContenedor svg:hover {
+      transform: translateY(-2px);
+      fill: white; }
 
 .footerPagos {
-  /* background-color: #0F5EA1; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center; }
-
-.contenedorPagos {
-  /* background-color: red; */
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly; }
-
-.footerContenedor svg {
-  width: 2rem;
-  fill: #fff;
-  transition: all linear 0.3s; }
-
-.footerContenedor svg:hover {
-  /* filter: drop-shadow(0px 0px 2px yellow); */
-  transform: translateY(-2px);
-  fill: white; }
+  .footerPagos .contenedorPagos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
 
 .footerLogitoMapa {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-#logito {
-  width: 10rem;
-  filter: drop-shadow(-35px 5px 40px #0ae3f3) drop-shadow(35px -15px 40px #ff00fb); }
+  .footerLogitoMapa #logito {
+    width: 8rem;
+    filter: drop-shadow(-35px 5px 40px #0ae3f3) drop-shadow(35px -15px 40px #ff00fb); }
 
 .footerRedes {
-  /* background-color: #7e90a2; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly; }
-
-.contenedorRedes {
-  /* background-color: red; */
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly; }
+  .footerRedes .contenedorRedes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
 
 .footerCopyright {
   grid-column: span 3;
-  /* background-color: #8a6060; */
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.footerCopyright p {
-  margin: 0;
-  padding-top: 0.1em; }
-
-.footerCopyright img {
-  width: 18px; }
+  .footerCopyright p {
+    margin: 0;
+    padding-top: 0.1em; }
 
 /* KeyFrames*/
 /*Animación Incio*/
@@ -1063,15 +1043,12 @@
     grid-template-rows: repeat(4, auto); }
   .footerPagos {
     grid-column: span 3;
-    grid-row: 2;
-    padding: 1rem 0em; }
+    grid-row: 2; }
   .footerLogitoMapa {
     grid-column: span 3;
-    grid-row: 1;
-    padding: 1rem 0em; }
+    grid-row: 1; }
   .footerRedes {
-    grid-column: span 3;
-    padding: 1rem 0em; }
+    grid-column: span 3; }
   .footerCopyright {
     grid-column: span 3; } }
 
