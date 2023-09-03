@@ -1,12 +1,11 @@
 @charset "UTF-8";
-/*Tipografias, reset*/
+/*---------------Typo & reset----------------*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/*Layout*/
 /*---------------Header----------------*/
 .header {
   background-color: #1E1D1D;
@@ -67,43 +66,33 @@
     box-shadow: 0px 0px .7rem .1rem #f304f3; }
 
 /*---------------Main----------------*/
-/*----------------Inicio---------------------*/
 .inicioMainS1 {
-  /* background-image: url(../assets/img/portadad.jpeg); */
-  background-size: cover;
-  /* padding: 1em 0; */
+  font-family: "Josefin Sans", sans-serif;
   height: auto;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border:red solid 2px; */
   padding: 0; }
 
+.inicioMainS1Enlace {
+  text-decoration: none; }
+  .inicioMainS1Enlace:hover::before {
+    content: "Ver Producto";
+    font-size: 1.2rem;
+    display: block;
+    color: #020202; }
+  .inicioMainS1Enlace .svgOjo {
+    transition: all linear 0.3s;
+    width: 2rem;
+    fill: #020202; }
+    .inicioMainS1Enlace .svgOjo:hover {
+      width: 5rem;
+      fill: #E91E63; }
+
 .inicioMainS1Waves {
+  fill: white;
   position: absolute;
   bottom: 0px;
-  /* bottom: 0px; */
   width: 100%;
   height: 35px; }
-
-.inicioMainS1Enlace {
-  text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif; }
-
-.inicioMainS1Enlace:hover::before {
-  content: "Ver Producto";
-  display: block;
-  color: #020202; }
-
-.efectoEye {
-  transition: all linear 0.3s;
-  width: 2rem;
-  fill: #020202; }
-
-.efectoEye:hover {
-  width: 5rem;
-  fill: #7704f3; }
 
 .inicioMainS2 {
   /* background: linear-gradient(to top left, rgb(102, 30, 102),rgba(38, 185, 196, 0.583) 50%, rgb(102, 30, 102) ); */
@@ -308,7 +297,6 @@
 .art7 iframe {
   width: 100%; }
 
-/*----------------Nosotros---------------------*/
 .nosotrosMainS1 {
   background-image: url(../assets/img/Nuevo.jpg);
   background-color: #0c70c6bf;
@@ -465,7 +453,6 @@
   text-align: center;
   padding: 0.5em; }
 
-/*----------------Producto---------------------*/
 /* .swiper {
     width: 80%;
     padding: 2em 0;
@@ -601,7 +588,6 @@
   filter: drop-shadow(-4px 5px 8px #0ae3f3) drop-shadow(4px -5px 8px #ff00fb);
   fill: white; }
 
-/*----------------Contacto---------------------*/
 .contactoMainS1 {
   background-image: url(../assets/img/contacto3.jpg);
   background-repeat: no-repeat;
@@ -734,7 +720,6 @@
   width: 100%;
   border-radius: 5px; }
 
-/*----------------CarritoCompras---------------------*/
 .carroMain {
   background-color: #e2ebf0;
   display: flex;
@@ -960,19 +945,7 @@
     margin: 0;
     padding-top: 0.1em; }
 
-/* KeyFrames*/
-/*Animación Incio*/
-/*Animación Nosotros*/
-@keyframes animacionFondo {
-  0% {
-    background-position-y: 8px;
-    background-image: url(../assets/img/paraFondoTexto3.jpg); }
-  50% {
-    background-image: url(../assets/img/paraFondoTexto.jpg); }
-  100% {
-    background-image: url(../assets/img/paraFondoTexto2.jpg); } }
-
-/* Media query */
+/*---------------Medias----------------*/
 @media (max-width: 1222px) {
   /* *********Header******* */
   .header ul {
@@ -1056,3 +1029,14 @@
   .productoMainS2InfoProductoPrecioIcon a {
     width: 1.6rem;
     padding: 0em 0.4em 0.2em 0.4em; } }
+
+/* KeyFrames*/
+/*Animación Nosotros*/
+@keyframes animacionFondo {
+  0% {
+    background-position-y: 8px;
+    background-image: url(../assets/img/paraFondoTexto3.jpg); }
+  50% {
+    background-image: url(../assets/img/paraFondoTexto.jpg); }
+  100% {
+    background-image: url(../assets/img/paraFondoTexto2.jpg); } }

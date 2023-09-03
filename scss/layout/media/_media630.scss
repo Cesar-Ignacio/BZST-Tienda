@@ -1,0 +1,77 @@
+@media (max-width: 630px) {
+
+    /**********Inicio******* */
+    .inicioMainS3ContenedorImg {
+        /* background-color: #7704f3; */
+
+        height: 70%;
+    }
+
+    .art1 {
+        grid-column: 1/6;
+        grid-row: 1;
+    }
+
+    .art2 {
+        grid-column: 1/6;
+        grid-row: 2;
+    }
+
+    .art3 {
+        grid-row: 3;
+        grid-column: 1/6;
+    }
+
+    .art4 {
+        grid-row: 4;
+        grid-column: 1/6;
+    }
+
+    .art5 {
+        grid-row: 5;
+        grid-column: 1/6;
+    }
+
+    .art6 {
+        grid-row: 6;
+        grid-column: 1/6;
+    }
+
+    .art7 {
+        grid-row: 7;
+        grid-column: 1/6;
+    }
+
+    .art7 iframe {
+        height: 15rem;
+    }
+
+    /* *********Productos******* */
+    .swiper-slide {
+        width: 10rem;
+    }
+
+
+    /* *********Footer******* */
+    .footer {
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .footerPagos {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+
+    .footerLogitoMapa {
+        grid-column: span 3;
+        grid-row: 1;
+    }
+
+    .footerRedes {
+        grid-column: span 3;
+    }
+
+    .footerCopyright {
+        grid-column: span 3;
+    }
+}
