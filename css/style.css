@@ -159,11 +159,7 @@
     height: 100%;
     fill: #c73bc082; }
 
-.inicioMainS3 {
-  border: #020202 solid 1px; }
-
 .inicioMainS3ContenedorNovedades {
-  border: #0f2a41 solid 1px;
   padding: 0.5em;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -188,7 +184,6 @@
   gap: 0.5rem;
   margin: 0.5rem 0; }
   .inicioMainS3PublicadoPor img {
-    background-color: #0f2a41;
     width: 4rem;
     height: 4rem;
     object-fit: cover;
@@ -199,7 +194,6 @@
     justify-content: center; }
 
 .inicioMainS3ContenedorImg {
-  border: #ec04ec solid 1px;
   width: 100%;
   height: 50%;
   padding: 0.1em; }

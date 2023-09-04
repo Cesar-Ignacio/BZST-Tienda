@@ -126,7 +126,7 @@
 
 .inicioMainS3 {
     @extend .inicioMainS2;
-    border: #020202 solid 1px;
+    // border: #020202 solid 1px;
 }
 
 .inicioMainS3Novedades {
@@ -134,7 +134,7 @@
 }
 
 .inicioMainS3ContenedorNovedades {
-    border: #0f2a41 solid 1px;
+    // border: #0f2a41 solid 1px;
     padding: 0.5em;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -168,7 +168,7 @@
     margin: 0.5rem 0;
 
     img {
-        background-color: #0f2a41;
+        // background-color: #0f2a41;
         width: 4rem;
         height: 4rem;
         object-fit: cover;
@@ -183,7 +183,7 @@
 }
 
 .inicioMainS3ContenedorImg {
-    border: rgb(236, 4, 236) solid 1px;
+    // border: rgb(236, 4, 236) solid 1px;
     width: 100%;
     height: 50%;
     padding: 0.1em;
