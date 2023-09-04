@@ -94,34 +94,23 @@
   width: 100%;
   height: 35px; }
 
-.inicioMainS2 {
-  /* background: linear-gradient(to top left, rgb(102, 30, 102),rgba(38, 185, 196, 0.583) 50%, rgb(102, 30, 102) ); */
+.inicioMainS2, .inicioMainS3 {
   padding: 0.5em;
-  border: #00ddfa solid 0px;
   overflow: hidden;
-  /*Para que el contenido que se desborde, no genere un  'after'*/ }
+  /*Para que el contenido que se desborde, no genere un  'after'*/
+  font-family: "Josefin Sans", sans-serif; }
 
-.inicioMainS2Clientes {
-  /* background-color:#2c2f329b; */
-  font-family: 'Josefin Sans', sans-serif;
+.inicioMainS2Clientes, .inicioMainS3Novedades {
   padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  border-radius: 0.5rem;
-  line-height: 2.5rem; }
-
-.inicioMainS2Clientes h2 {
-  font-size: 2.5rem; }
+  text-align: center; }
+  .inicioMainS2Clientes h2, .inicioMainS3Novedades h2 {
+    font-size: 2.5rem; }
 
 .InicioMainS2ContenedorMensajes {
-  /* border: black solid 1px; */
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  font-family: 'Josefin Sans', sans-serif; }
+  justify-content: space-evenly; }
 
 .InicioMainS2Mensajes {
   background-image: linear-gradient(to top right, #84a8bfea 0%, #f8bcf8ee 100%);
@@ -136,134 +125,102 @@
   margin-bottom: 3rem;
   border-radius: 28% 72% 58% 42% / 54% 60% 40% 46%;
   text-align: center; }
-
-.InicioMainS2Mensajes::after {
-  content: "";
-  display: block;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  background-image: url(../assets/svg/pinceles.svg);
-  background-size: contain;
-  transform: rotateZ(50deg); }
+  .InicioMainS2Mensajes::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-image: url(../assets/svg/pinceles.svg);
+    background-size: contain;
+    transform: rotateZ(50deg); }
+  .InicioMainS2Mensajes p {
+    line-height: 1rem; }
 
 .InicioMainS2ContenedorFoto {
-  /* background-color: blue; */
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
   overflow: hidden;
   position: absolute;
   top: 0; }
-
-.InicioMainS2ContenedorFoto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  .InicioMainS2ContenedorFoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .InicioMainS2ContenedorComillas {
-  /* background-color: yellow; */
   width: 3rem;
   height: 3rem; }
-
-.InicioMainS2ContenedorComillas svg {
-  width: 100%;
-  height: 100%;
-  fill: #c73bc082; }
-
-.InicioMainS2Mensajes p {
-  line-height: 1rem; }
+  .InicioMainS2ContenedorComillas svg {
+    width: 100%;
+    height: 100%;
+    fill: #c73bc082; }
 
 .inicioMainS3 {
-  /* background: linear-gradient(to top right, rgb(7, 99, 100), rgba(20, 162, 164, 0.524) 50%, rgb(102, 30, 102)); */
-  padding: 0.5em;
-  font-family: 'Josefin Sans', sans-serif; }
-
-.inicioMainS3Novedades {
-  /* background-color: #04f3c3; */
-  text-align: center;
-  padding: 0.5em;
-  line-height: 2.5rem; }
-
-.inicioMainS3Novedades h2 {
-  font-size: 2.5rem; }
+  border: #020202 solid 1px; }
 
 .inicioMainS3ContenedorNovedades {
-  /* background-color: #56bc75; */
+  border: #0f2a41 solid 1px;
   padding: 0.5em;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, auto);
-  column-gap: 1rem;
-  row-gap: 1rem; }
+  gap: 1rem; }
 
 .inicioMainS3Articulos {
   background-color: rgba(255, 228, 196, 0.272);
-  width: 100%;
-  height: 100%;
-  font-family: 'Josefin Sans', sans-serif;
   padding: 0.2em;
   border-radius: 0.3rem;
   border: transparent solid 1px;
   transition: all linear 0.8s; }
+  .inicioMainS3Articulos h3 {
+    font-size: calc(1vw + 1rem); }
+  .inicioMainS3Articulos:hover {
+    background-color: #fbf8f8;
+    border: #020202 solid 1px; }
 
-.inicioMainS3Articulos:hover {
-  background-color: #fbf8f8;
-  border: #020202 solid 1px; }
-
-.inicioMainS3Articulos h3 {
-  /* font-size: 2rem; */
-  font-size: calc(1vw + 1rem); }
-
-.inicioMainS3Articulos p {
-  margin-bottom: 0.2rem; }
+.inicioMainS3PublicadoPor {
+  display: flex;
+  padding: 0.2em;
+  gap: 0.5rem;
+  margin: 0.5rem 0; }
+  .inicioMainS3PublicadoPor img {
+    background-color: #0f2a41;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 0.5rem; }
+  .inicioMainS3PublicadoPor .inicioMainS3PublicadoPorDetalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 .inicioMainS3ContenedorImg {
-  /* background-color: #7704f3; */
+  border: #ec04ec solid 1px;
   width: 100%;
   height: 50%;
   padding: 0.1em; }
-
-.inicioMainS3Articulos img {
-  width: 100%;
-  height: 100%; }
-
-.inicioMainS3PublicadoPor {
-  /* background-color: #04f3c3; */
-  display: flex;
-  padding: 0.2em;
-  gap: 0.5rem; }
-
-.inicioMainS3PublicadoPor img {
-  background-color: #0f2a41;
-  width: 4rem;
-  height: 4rem;
-  object-fit: cover;
-  border-radius: 0.5rem; }
-
-.inicioMainS3PublicadoPorDetalles {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* background-color: red; */ }
+  .inicioMainS3ContenedorImg img {
+    width: 100%;
+    height: 100%; }
 
 .art1 {
   grid-column: 1;
   grid-row: 1/4; }
-
-.art1 em {
-  background-color: #a42bb963; }
+  .art1 em {
+    background-color: #a42bb963; }
 
 .art2 {
   grid-column: span 2;
   grid-row: 1/6; }
-
-.art2 .inicioMainS3ContenedorImg {
-  height: fit-content;
-  margin-bottom: 1.5rem; }
+  .art2 .InicioMainS3ContendorIframe {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 1rem; }
 
 .art3 {
   grid-row: 4/6;
@@ -276,26 +233,20 @@
 .art5 {
   grid-row: 3/6;
   grid-column: 4; }
-
-.art5 h3 {
-  font-size: 1.5rem; }
-
-.art5 em {
-  background-color: #1577cdc9; }
+  .art5 em {
+    background-color: #1577cdc9; }
 
 .art6 {
   grid-row: 1/4;
   grid-column: 5; }
-
-.art6 em {
-  background-color: yellow; }
+  .art6 em {
+    background-color: yellow; }
 
 .art7 {
   grid-row: 4/6;
   grid-column: 5; }
-
-.art7 iframe {
-  width: 100%; }
+  .art7 iframe {
+    width: 100%; }
 
 .nosotrosMainS1 {
   background-image: url(../assets/img/Nuevo.jpg);
