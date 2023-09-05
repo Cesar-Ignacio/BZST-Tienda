@@ -399,7 +399,6 @@
   padding: 0.5em; }
 
 .productoMainS1 {
-  border: #00ddfa solid 1px;
   font-family: "Josefin Sans", sans-serif;
   color: black;
   background: #C9CCD3;
@@ -465,71 +464,61 @@
     height: 100%; }
 
 .productoMainS2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   padding-top: 1rem; }
 
-.productoMainS2Filtro {
-  padding: 0.5em 1.5em; }
-
-.dropbtn {
+.productoMainS2Filtro .dropbtn {
   width: 10rem; }
 
-.offcanvas {
-  background-color: #00000049;
-  /* background del modal*/ }
-
-.productoMainS2Filtro button {
-  padding: 0.5em 2em;
-  /* background-color: #00ddfa; */ }
+.productoMainS2Filtro .offcanvas {
+  background-color: #14131346;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); }
 
 .productoMainS2ContendorProductos {
-  border: #00ddfa solid 0px;
-  color: white;
-  /* padding: 0; */ }
+  border: #00ddfa solid 0px; }
 
 .productoMainS2Producto {
   border-radius: 0.5rem;
   overflow: hidden;
-  border: #f703a6 solid 1px;
-  padding: 0; }
+  border: #1E1D1D solid 1px;
+  padding: 0;
+  transition: all linear 0.5s; }
+  .productoMainS2Producto:hover {
+    transform: translateY(-5px); }
 
 .productoMainS2ContenedorImg {
-  /* background-color: #5C7C8D; */
-  width: 100%;
-  /* height: 10rem; */ }
-
-.productoMainS2ContenedorImg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  width: 100%; }
+  .productoMainS2ContenedorImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all linear 0.5s; }
+    .productoMainS2ContenedorImg img:hover {
+      transform: scale(1.04); }
 
 .productoMainS2InfoProducto {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
-  background-blend-mode: multiply, multiply;
+  background-color: #1E1D1D;
   width: 100%;
   padding: 0.5rem;
   position: relative;
   color: white; }
+  .productoMainS2InfoProducto span {
+    font-size: calc(0.5vw + 0.5rem); }
+  .productoMainS2InfoProducto p {
+    margin: 0;
+    font-size: calc(0.4vw + 0.4rem); }
 
-.productoMainS2InfoProducto span {
-  font-size: calc(0.5vw + 0.5rem); }
-
-.productoMainS2InfoProducto p {
-  margin: 0;
-  font-size: calc(0.4vw + 0.4rem); }
-
-.productoMainS2InfoProductoPrecioIcon a {
-  /* background-color: #00ddfa; */
+.productoMainS2InfoProductoContenedorIcon a {
   width: 2.2rem;
   display: inline-block;
   border: white solid 2px;
   box-shadow: 0px 0px 7px 1px white;
   border-radius: 50%;
   padding: 0.2em 0.5em 0.3em 0.5em; }
-
-.productoMainS2InfoProductoPrecioIcon svg {
-  filter: drop-shadow(-4px 5px 8px #0ae3f3) drop-shadow(4px -5px 8px #ff00fb);
-  fill: white; }
+  .productoMainS2InfoProductoContenedorIcon a svg {
+    filter: drop-shadow(-4px 5px 8px #0ae3f3) drop-shadow(4px -5px 8px #ff00fb);
+    fill: white; }
 
 .contactoMainS1 {
   background-image: url(../assets/img/contacto3.jpg);
