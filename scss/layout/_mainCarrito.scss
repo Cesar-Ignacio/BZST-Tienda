@@ -1,101 +1,103 @@
-.carroMain {
-    background-color: #e2ebf0;
-    display: flex;
-    justify-content: center;
-}
-
 .carroMainS1 {
-    /* background: red; */
     display: grid;
     grid-template-columns: 75% auto;
-    grid-template-rows: 12rem auto;
-    column-gap: 1rem;
-    row-gap: 1rem;
-    width: 112.5rem;
+    gap: 1rem;
     padding: 1em;
 }
 
 .carroMainS1CarritoCompra {
-    background-color: white;
-    font-family: 'Josefin Sans', sans-serif;
+    border: rgba(215, 214, 214, 0.534) solid 1px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 1.5rem 0.1rem rgba(128, 128, 128, 0.351);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-family: $fuentePrincipal;
     padding: 0.5em 2em;
     width: 100%;
+    grid-column: 1/3;
     grid-row: span 2;
-}
 
-.carroMainS1CarritoCompra h1 {
-    color: black;
-    padding: 0.2em;
-    font-size: 2.4rem;
-    text-align: center;
-    /* background-color: #04f3c3; */
+    h1 {
+        padding: 0.2em;
+        font-size: 2.4rem; //trabajar con clac
+        text-align: center;
+    }
 }
 
 .carroMainS1Producto {
     background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-    /* background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%); */
     margin-bottom: 1rem;
     padding: 0.5em;
     display: flex;
     gap: 1rem;
+    border: red solid 1px;
 }
 
 .carroMainS1ContenedorImg {
-    background-color: #0f2a41;
+    border: blue solid 1px;
     width: 10rem;
     height: 10rem;
-}
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-.carroMainS1ContenedorImg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .carroMainS1InfoProducto {
-    /* background-color: #aec4bf; */
+    border: violet solid 1px;
     display: flex;
     flex-direction: column;
-    grid-column: 2;
-    padding: 0.5em;
     flex-grow: 1;
 }
 
 .carroMainS1Descripcion {
-    /* background-color: rgb(0, 255, 98); */
+    border: #0f2a41 solid 1px;
     height: 80%;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.carroMainS1Descripcion img {
-    /* background-color: #04f3c3; */
-    width: 4rem;
-    min-height: 4rem;
-}
+    // logo de producto
+    img {
 
-.carroMainS1Descripcion form {
-    /* background-color: #04f3c3; */
-    width: 8rem;
+        width: 4rem;
+        min-height: 4rem;
+    }
+
+    // formulario cantidod
+    form {
+        width: 8rem;
+    }
+
+    .carroMainS1Precio{
+        font-size: 1.5rem;
+    }
+
 }
 
 .carroMainS1Destalles {
+    border: green solid 1px;
     height: 20%;
-    /* background-color: rgb(145, 255, 0); */
+    a{
+        text-decoration: none;
+        color: #0F5EA1;
+        margin-right: 1rem;
+    }
 }
 
-.carroMainS1Destalles a {
-    text-decoration: none;
-    color: #0F5EA1;
-    margin-right: 1rem;
-}
 
 .carroMainS1ResumenCompra {
-    background-color: #ffffff;
+    border: rgba(215, 214, 214, 0.534) solid 1px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 1.5rem 0.1rem rgba(128, 128, 128, 0.351);
+
     font-family: 'Josefin Sans', sans-serif;
     padding: 0.5em;
     line-height: 2.5rem;
     width: 100%;
     justify-self: center;
-    grid-column: 2;
+    grid-column: 3/4;
 }
 
 .carroMainS1ResumenCompra h2 {
@@ -117,8 +119,10 @@
 }
 
 .carroMainS1OtrosProductos {
-    background-color: rgb(255, 255, 255);
-    grid-column: 2;
+    border: rgba(215, 214, 214, 0.534) solid 1px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 1.5rem 0.1rem rgba(128, 128, 128, 0.351);
+    grid-column: 3/4;
     padding: 0.5em;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -131,11 +135,12 @@
 .carroMainS1ContenedorOtros {
     /* background-color: #a7c2bc; */
     padding: 0.1em;
-    max-height: 55rem;
+    //max-height: 55rem;
 }
 
 .carroMainS1OtroArticulo {
-    /* background-color: red; */
+
+
     margin-bottom: 0.2rem;
     display: flex;
 }
