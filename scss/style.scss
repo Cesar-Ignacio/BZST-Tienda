@@ -5,6 +5,10 @@
 @import "./bas/typo.scss";
 @import "./bas/reset.scss";
 
+/*---------------Componentes----------------*/
+@import "./componentes/botone.scss";
+@import "./componentes/tarjetasProductos";
+
 /*---------------Header----------------*/
 @import "./layout/header.scss";
 
