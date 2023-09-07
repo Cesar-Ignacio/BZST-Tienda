@@ -6,15 +6,12 @@
 }
 
 .carroMainS1CarritoCompra {
-    border: rgba(215, 214, 214, 0.534) solid 1px;
-    border-radius: 0.5rem;
-    box-shadow: 0px 0px 1.5rem 0.1rem rgba(128, 128, 128, 0.351);
-    border: 1px solid rgba(255, 255, 255, 0.18);
     font-family: $fuentePrincipal;
     padding: 0.5em 2em;
     width: 100%;
     grid-column: 1/3;
     grid-row: span 2;
+    @include shadowCarrito();
 
     h1 {
         padding: 0.2em;
@@ -29,13 +26,14 @@
     padding: 0.5em;
     display: flex;
     gap: 1rem;
-    border: red solid 1px;
+    // border: red solid 1px;
 }
 
 .carroMainS1ContenedorImg {
-    border: blue solid 1px;
+    //  border: blue solid 1px;
     width: 10rem;
     height: 10rem;
+
     img {
         width: 100%;
         height: 100%;
@@ -45,14 +43,14 @@
 }
 
 .carroMainS1InfoProducto {
-    border: violet solid 1px;
+    //border: violet solid 1px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
 .carroMainS1Descripcion {
-    border: #0f2a41 solid 1px;
+    // border: #0f2a41 solid 1px;
     height: 80%;
     display: flex;
     justify-content: space-between;
@@ -70,120 +68,99 @@
         width: 8rem;
     }
 
-    .carroMainS1Precio{
+    .carroMainS1Precio {
         font-size: 1.5rem;
     }
 
 }
 
 .carroMainS1Destalles {
-    border: green solid 1px;
+    // border: green solid 1px;
     height: 20%;
-    a{
+    display: flex;
+    align-items: center;
+
+    a {
         text-decoration: none;
         color: #0F5EA1;
         margin-right: 1rem;
     }
 }
 
-
 .carroMainS1ResumenCompra {
-    border: rgba(215, 214, 214, 0.534) solid 1px;
-    border-radius: 0.5rem;
-    box-shadow: 0px 0px 1.5rem 0.1rem rgba(128, 128, 128, 0.351);
-
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 0.5em;
-    line-height: 2.5rem;
+    font-family: $fuentePrincipal;
+    padding: 1em 0.5em;
     width: 100%;
-    justify-self: center;
     grid-column: 3/4;
-}
+    @include shadowCarrito();
 
-.carroMainS1ResumenCompra h2 {
-    /* background-color: #0f2a41; */
-    padding: 0.32em 0;
-    font-size: 1.5rem;
-}
+    h2 {
+        padding: 0.32em 0;
+        font-size: 1.5rem;
+    }
 
-.carroMainS1ResumenCompra p {
-    margin: 0;
-}
+    span {
+        font-weight: bold;
+    }
 
-.carroMainS1ResumenCompra a {
-    text-decoration: none;
-    color: #020202;
-    background-color: #f1f500;
-    padding: 0.4em 1rem;
-    border-radius: .2rem;
+    a {
+       
+        font-size: 1.1rem;
+    }
 }
 
 .carroMainS1OtrosProductos {
-    border: rgba(215, 214, 214, 0.534) solid 1px;
-    border-radius: 0.5rem;
-    box-shadow: 0px 0px 1.5rem 0.1rem rgba(128, 128, 128, 0.351);
     grid-column: 3/4;
-    padding: 0.5em;
-    font-family: 'Josefin Sans', sans-serif;
-}
+    padding: 1em 0.5em;
+    font-family: $fuentePrincipal;
+    @include shadowCarrito();
 
-.carroMainS1OtrosProductos h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+    h3 {
+        font-size: 1.3rem;
+    }
+
 }
 
 .carroMainS1ContenedorOtros {
-    /* background-color: #a7c2bc; */
+    //border: #020202 solid 1px;
     padding: 0.1em;
-    //max-height: 55rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .carroMainS1OtroArticulo {
-
-
-    margin-bottom: 0.2rem;
+    //border: blue solid 1px;
     display: flex;
-}
 
-.carroMainS1OtroArticulo img {
-    /* background-color: #0fe160; */
-    width: 7rem;
-    height: 7rem;
-}
+    img {
+       // border: #f1f500 solid 1px;
+        width: 7rem;
+       
+    }
 
-.carroMainS1OtroArticulo ul {
-    /* background-color: rgba(0, 0, 255, 0.418); */
-    padding: 0.4em;
-    line-height: 1.5rem;
-}
+    ul {
+       // border: red solid 1px;
+        padding: 0.4em;
+        line-height: 1.5rem;
+        margin: 0;
+        li{
+            list-style: none;
+            
+            span{
+                font-size: 1.1rem;
+            }
 
-.carroMainS1OtroArticulo li {
-    list-style: none;
-    font-size: 0.9rem;
-}
-
-.carroMainS1OtroArticulo span {
-    font-size: 1.1rem;
-}
-
-.carroMainS1OtroArticulo p {
-    line-height: 0.7rem;
-}
-
-.carroMainS1ContenedorOtros strong {
-    color: rgb(156, 19, 19);
-}
-
-.carroMainS1OtroArticulo button {
-    background-color: #f1f500;
-    border-style: none;
-    padding: 0 2em;
-    font-family: 'Josefin Sans', sans-serif;
-    border-radius: 2rem;
-}
-
-.carroMainS1OtroArticulo a {
-    text-decoration: none;
-    color: #020202;
-    font-size: 1rem;
+            P{
+              font-size: 0.8rem;
+              line-height: 0.7rem;  
+            }
+            strong {
+                color: #F10F4D;
+            }
+            a {
+                font-size: 0.8rem;
+            }
+        }
+    }
 }

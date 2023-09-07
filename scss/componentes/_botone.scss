@@ -1,0 +1,15 @@
+.btnBasico{
+    padding: 0.5em 2em; 
+    border-radius:2rem;
+    transition: all linear 0.2s;
+    text-decoration: none;
+    color: #020202;
+}
+
+.btnCarritoCompra{
+    @extend .btnBasico;
+    background-color:#F1C40F;
+    &:hover{
+        filter:invert(2);
+    }  
+}
