@@ -145,7 +145,19 @@
   font-family: "Josefin Sans", sans-serif;
   height: auto;
   position: relative;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .inicioMainS1 h1 {
+    color: #1E1D1D;
+    width: 80%;
+    text-align: center;
+    top: 0;
+    text-align: center;
+    margin: 0;
+    font-size: calc(1vw + 1.2rem);
+    padding: 0.5em 0; }
 
 .inicioMainS1Enlace {
   text-decoration: none; }
