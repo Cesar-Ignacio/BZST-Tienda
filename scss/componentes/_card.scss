@@ -8,6 +8,10 @@
     box-shadow: 0px 0px 50px 5px rgb(252, 252, 252);
     transition: all linear 0.5s;
 
+    &:hover img {
+        transform: scale(1.02);
+    }
+
 }
 
 .cardContenedorImg {
@@ -19,10 +23,6 @@
         width: 100%;
         height: 100%;
         transition: all linear 0.3s;
-
-        &:hover {
-            transform: scale(1.2);
-        }
     }
 }
 
@@ -55,7 +55,7 @@
     }
 
     a {
-       // border: #00ddfa solid 1px;
+        // border: #00ddfa solid 1px;
         display: inline-block;
         width: 2rem;
         padding: 0.1em;
@@ -69,7 +69,26 @@
 }
 
 .cardV1 {
- @extend .card;
- width: 18rem;
- box-shadow: 0px 0px 0px 0px rgb(252, 252, 252);
+    @extend .card;
+    border: rgb(152, 148, 148) 1px solid;
+    border-image: none;
+    border-image-slice: 0;
+    box-shadow: 0px 0px 5px 2px rgb(113, 110, 110);
+    color: $colorHeader;
+}
+
+.cardV1Info {
+    @extend .cardInfo;
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+
+}
+
+.cardV1Footer {
+    @extend .cardFooter;
+
+    a {
+        svg {
+            fill: $colorHeader;
+        }
+    }
 }

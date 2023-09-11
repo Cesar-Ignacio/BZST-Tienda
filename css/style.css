@@ -19,6 +19,21 @@
   .btnCarritoCompra:hover {
     filter: invert(2); }
 
+.swiperContenedor, .swiperContenedorxxl {
+  width: 70%;
+  padding: 0.5em; }
+
+.swiperContenedorxxl {
+  width: 100%; }
+
+.swiper-slide, .swipersm {
+  max-width: 19rem; }
+  .swiper-slide img, .swipersm img {
+    width: 100%; }
+
+.swipersm {
+  max-width: 15rem; }
+
 .productoMainS2Producto {
   border-radius: 0.5rem;
   overflow: hidden;
@@ -90,6 +105,8 @@
   height: auto;
   box-shadow: 0px 0px 50px 5px #fcfcfc;
   transition: all linear 0.5s; }
+  .card:hover img, .cardV1:hover img {
+    transform: scale(1.02); }
 
 .cardContenedorImg {
   width: 100%;
@@ -99,38 +116,45 @@
     width: 100%;
     height: 100%;
     transition: all linear 0.3s; }
-    .cardContenedorImg img:hover {
-      transform: scale(1.2); }
 
-.cardInfo {
+.cardInfo, .cardV1Info {
   background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
   text-align: center;
   padding-bottom: 0.5em; }
-  .cardInfo span {
+  .cardInfo span, .cardV1Info span {
     font-size: calc(0.5vw + 1rem); }
-  .cardInfo p {
+  .cardInfo p, .cardV1Info p {
     font-size: calc(0.5vw + 0.8rem);
     font-weight: 1; }
 
-.cardFooter {
+.cardFooter, .cardV1Footer {
   display: flex;
   justify-content: space-evenly; }
-  .cardFooter strong {
+  .cardFooter strong, .cardV1Footer strong {
     color: black;
     font-weight: 1;
     font-size: calc(1vw + 0.7rem); }
-  .cardFooter a {
+  .cardFooter a, .cardV1Footer a {
     display: inline-block;
     width: 2rem;
     padding: 0.1em; }
-    .cardFooter a svg {
+    .cardFooter a svg, .cardV1Footer a svg {
       fill: #fafafa;
       width: 100%;
       height: 100%; }
 
 .cardV1 {
-  width: 18rem;
-  box-shadow: 0px 0px 0px 0px #fcfcfc; }
+  border: #989494 1px solid;
+  border-image: none;
+  border-image-slice: 0;
+  box-shadow: 0px 0px 5px 2px #716e6e;
+  color: #1E1D1D; }
+
+.cardV1Info {
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%); }
+
+.cardV1Footer a svg {
+  fill: #1E1D1D; }
 
 /*---------------Header----------------*/
 .header {
@@ -198,8 +222,8 @@
   position: relative;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .inicioMainS1 h1 {
     color: #1E1D1D;
     width: 80%;
@@ -232,19 +256,23 @@
   width: 100%;
   height: 35px; }
 
-.inicioMainS2, .inicioMainS3, .inicioMainS4 {
+.inicioMainS2, .inicioMainS3, .inicioMainS4, .inicioMainS5, .inicioMainS6 {
   padding: 0.5em;
   overflow: hidden;
   /*Para que el contenido que se desborde, no genere un  'after'*/
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.inicioMainS2Clientes, .inicioMainS3Novedades, .inicioMainS4Titulo {
+.inicioMainS2Clientes, .inicioMainS3Novedades, .inicioMainS4Titulo, .inicioMainS5Titulo, .inicioMainS6Titulo {
   padding: 0.5rem;
   text-align: center; }
-  .inicioMainS2Clientes h2, .inicioMainS3Novedades h2, .inicioMainS4Titulo h2 {
+  .inicioMainS2Clientes h2, .inicioMainS3Novedades h2, .inicioMainS4Titulo h2, .inicioMainS5Titulo h2, .inicioMainS6Titulo h2 {
     font-size: calc(1vw + 1.1rem); }
 
 .InicioMainS2ContenedorMensajes {
+  width: 100%;
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -380,16 +408,33 @@
   .art7 iframe {
     width: 100%; }
 
-.inicioMainS4 {
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
-
-.inicioMainS4ContenedorArt {
-  width: 70%; }
-  .inicioMainS4ContenedorArt .swiper-slide {
+.contenedorImg {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden; }
+  .contenedorImg .inicioMainS5Categoria {
+    position: absolute;
+    top: 0;
+    background-color: #0202024e;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center; }
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all linear 0.5s; }
+    .contenedorImg .inicioMainS5Categoria:hover {
+      opacity: 0; }
+
+.inicioMainS6ContenedorMarcas {
+  border: #020202 solid 1px;
+  display: flex;
+  padding: 0.5em; }
+  .inicioMainS6ContenedorMarcas .inicioMainS6Marca {
+    background-color: #020202;
+    padding: 0.5em; }
+    .inicioMainS6ContenedorMarcas .inicioMainS6Marca svg {
+      fill: aqua; }
 
 .nosotrosMainS1 {
   background-image: url(../assets/img/Nuevo.jpg);
@@ -557,15 +602,6 @@
   .productoMainS1 h1 {
     font-size: calc(1vw + 2.2rem);
     text-align: center; }
-
-.productoMainS1Contenedor {
-  width: 100%;
-  padding: 2em 0;
-  height: fit-content;
-  overflow: hidden; }
-
-.swiper-slide {
-  width: 18rem; }
 
 .productoMainS2 {
   font-family: "Josefin Sans", sans-serif;
@@ -943,10 +979,10 @@
 
 @media (max-width: 800px) {
   /* *********Inicio******* */
-  .inicioMainS4ContenedorArt {
+  .swiperContenedor, .swiperContenedorxxl {
     width: 100%; }
   /* *********Productos******* */
-  .swiper-slide {
+  .swiper-slide, .swipersm {
     width: 15rem; } }
 
 @media (max-width: 630px) {
@@ -978,7 +1014,7 @@
   .art7 iframe {
     height: 15rem; }
   /* *********Productos******* */
-  .swiper-slide {
+  .swiper-slide, .swipersm {
     width: 10rem; }
   /*************Carrtio*********/
   .carroMainS1Destalles {

@@ -1,0 +1,26 @@
+.swiperContenedor {
+   // border: #ee0d0d solid 1px;
+    width: 70%;
+    padding: 0.5em;
+
+}
+
+.swiperContenedorxxl {
+    @extend .swiperContenedor;
+    width: 100%;
+
+}
+
+.swiper-slide {
+    // border: red solid 1px;
+    max-width: 19rem;
+    img {
+        width: 100%;
+    }
+
+}
+
+.swipersm{
+    @extend .swiper-slide;
+    max-width: 15rem;
+}
