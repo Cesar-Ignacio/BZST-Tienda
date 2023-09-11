@@ -265,3 +265,22 @@
         width: 100%;
     }
 }
+
+.inicioMainS4{
+    @extend .inicioMainS2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+}
+.inicioMainS4Titulo{
+    @extend .inicioMainS2Clientes;
+}
+.inicioMainS4ContenedorArt {
+    ///border: #ee0d0d solid 1px;
+    width: 70%;
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+

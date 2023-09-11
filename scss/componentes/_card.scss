@@ -1,0 +1,75 @@
+.card {
+    border: 4px solid;
+    border-image: linear-gradient(to top right, rgba(1, 223, 226, 0.912), rgba(232, 140, 2, 0.899) 50%, rgba(236, 6, 236, 0.963));
+    border-image-slice: 1;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 50px 5px rgb(252, 252, 252);
+    transition: all linear 0.5s;
+
+}
+
+.cardContenedorImg {
+    width: 100%;
+    /* El alto de pagina se adapta  a la imagen height: auto; */
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        transition: all linear 0.3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.cardInfo {
+    // border: blue solid 1px;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    text-align: center;
+    padding-bottom: 0.5em;
+
+    span {
+        font-size: calc(0.5vw + 1rem);
+    }
+
+    p {
+        font-size: calc(0.5vw + 0.8rem);
+        font-weight: 1;
+    }
+
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-evenly;
+
+    strong {
+        // border: #00ddfa solid 1px;
+        color: black;
+        font-weight: 1;
+        font-size: calc(1vw + 0.7rem);
+    }
+
+    a {
+       // border: #00ddfa solid 1px;
+        display: inline-block;
+        width: 2rem;
+        padding: 0.1em;
+
+        svg {
+            fill: #fafafa;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.cardV1 {
+ @extend .card;
+ width: 18rem;
+ box-shadow: 0px 0px 0px 0px rgb(252, 252, 252);
+}

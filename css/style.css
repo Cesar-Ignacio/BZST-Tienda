@@ -81,6 +81,57 @@
     .productoMainS2InfoProductoContenedorIcon a:hover svg {
       fill: #ffffff; }
 
+.card, .cardV1 {
+  border: 4px solid;
+  border-image: linear-gradient(to top right, rgba(1, 223, 226, 0.912), rgba(232, 140, 2, 0.899) 50%, rgba(236, 6, 236, 0.963));
+  border-image-slice: 1;
+  color: white;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 50px 5px #fcfcfc;
+  transition: all linear 0.5s; }
+
+.cardContenedorImg {
+  width: 100%;
+  /* El alto de pagina se adapta  a la imagen height: auto; */
+  overflow: hidden; }
+  .cardContenedorImg img {
+    width: 100%;
+    height: 100%;
+    transition: all linear 0.3s; }
+    .cardContenedorImg img:hover {
+      transform: scale(1.2); }
+
+.cardInfo {
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  text-align: center;
+  padding-bottom: 0.5em; }
+  .cardInfo span {
+    font-size: calc(0.5vw + 1rem); }
+  .cardInfo p {
+    font-size: calc(0.5vw + 0.8rem);
+    font-weight: 1; }
+
+.cardFooter {
+  display: flex;
+  justify-content: space-evenly; }
+  .cardFooter strong {
+    color: black;
+    font-weight: 1;
+    font-size: calc(1vw + 0.7rem); }
+  .cardFooter a {
+    display: inline-block;
+    width: 2rem;
+    padding: 0.1em; }
+    .cardFooter a svg {
+      fill: #fafafa;
+      width: 100%;
+      height: 100%; }
+
+.cardV1 {
+  width: 18rem;
+  box-shadow: 0px 0px 0px 0px #fcfcfc; }
+
 /*---------------Header----------------*/
 .header {
   background-color: #1E1D1D;
@@ -181,16 +232,16 @@
   width: 100%;
   height: 35px; }
 
-.inicioMainS2, .inicioMainS3 {
+.inicioMainS2, .inicioMainS3, .inicioMainS4 {
   padding: 0.5em;
   overflow: hidden;
   /*Para que el contenido que se desborde, no genere un  'after'*/
   font-family: "Josefin Sans", sans-serif; }
 
-.inicioMainS2Clientes, .inicioMainS3Novedades {
+.inicioMainS2Clientes, .inicioMainS3Novedades, .inicioMainS4Titulo {
   padding: 0.5rem;
   text-align: center; }
-  .inicioMainS2Clientes h2, .inicioMainS3Novedades h2 {
+  .inicioMainS2Clientes h2, .inicioMainS3Novedades h2, .inicioMainS4Titulo h2 {
     font-size: calc(1vw + 1.1rem); }
 
 .InicioMainS2ContenedorMensajes {
@@ -328,6 +379,17 @@
   grid-column: 5; }
   .art7 iframe {
     width: 100%; }
+
+.inicioMainS4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.inicioMainS4ContenedorArt {
+  width: 70%; }
+  .inicioMainS4ContenedorArt .swiper-slide {
+    display: flex;
+    justify-content: center; }
 
 .nosotrosMainS1 {
   background-image: url(../assets/img/Nuevo.jpg);
@@ -504,51 +566,6 @@
 
 .swiper-slide {
   width: 18rem; }
-
-.productoMainS1Producto {
-  border: 4px solid;
-  border-image: linear-gradient(to top right, rgba(1, 223, 226, 0.912), rgba(232, 140, 2, 0.899) 50%, rgba(236, 6, 236, 0.963));
-  border-image-slice: 1;
-  color: white;
-  width: 100%;
-  height: auto;
-  box-shadow: 0px 0px 50px 5px #fcfcfc;
-  transition: all linear 0.5s; }
-
-.productoMainS1ContenedorImg {
-  width: 100%;
-  /* El alto de pagina se adapta  a la imagen height: auto; */
-  overflow: hidden; }
-  .productoMainS1ContenedorImg img {
-    width: 100%;
-    height: 100%;
-    transition: all linear 0.3s; }
-    .productoMainS1ContenedorImg img:hover {
-      transform: scale(1.2); }
-
-.productoMainS1FooterProducto {
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-  text-align: center;
-  padding-bottom: 0.5em; }
-  .productoMainS1FooterProducto span {
-    font-size: calc(0.5vw + 1rem); }
-  .productoMainS1FooterProducto p {
-    font-size: calc(0.5vw + 0.8rem);
-    font-weight: 1; }
-
-.productoMainS1FooterPrecioIcon strong {
-  color: black;
-  font-weight: 1;
-  font-size: calc(1vw + 0.7rem); }
-
-.productoMainS1FooterPrecioIcon a {
-  display: inline-block;
-  width: 2rem;
-  padding: 0.1em; }
-  .productoMainS1FooterPrecioIcon a svg {
-    fill: #fafafa;
-    width: 100%;
-    height: 100%; }
 
 .productoMainS2 {
   font-family: "Josefin Sans", sans-serif;
@@ -925,6 +942,9 @@
     padding: 0; } }
 
 @media (max-width: 800px) {
+  /* *********Inicio******* */
+  .inicioMainS4ContenedorArt {
+    width: 100%; }
   /* *********Productos******* */
   .swiper-slide {
     width: 15rem; } }
