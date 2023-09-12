@@ -13,3 +13,12 @@
         filter:invert(2);
     }  
 }
+
+.btnv1{
+    @extend .btnBasico;
+    background-color:$colorHeader;
+    color: white;
+    &:hover{
+        filter:invert(2);
+    }  
+}
