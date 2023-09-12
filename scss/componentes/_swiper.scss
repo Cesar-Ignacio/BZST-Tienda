@@ -8,7 +8,7 @@
 .swiperContenedorxxl {
     @extend .swiperContenedor;
     width: 100%;
-
+    overflow: hidden;
 }
 
 .swiper-slide {
