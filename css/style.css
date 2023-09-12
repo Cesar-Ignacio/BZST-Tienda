@@ -353,40 +353,36 @@
     transform: scale3d(1, 1, 1); } }
 
 .nosotrosMainS1 {
+  border: yellow solid 1px;
   background-image: url(../assets/img/Nuevo.jpg);
-  background-color: #0c70c6bf;
-  color: transparent;
-  font-family: 'Josefin Sans', sans-serif;
-  height: 100vh;
   background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+  min-height: 35rem;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.nosotrosMainS1Titulo {
-  width: 70%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5em;
   text-align: center; }
-
-.nosotrosMainS1Titulo h1 {
-  font-size: 9rem;
-  text-transform: uppercase;
-  background-image: url(../assets/img/paraFondoTexto2.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position-y: center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation-name: animacionFondo;
-  animation-duration: 5s;
-  animation-iteration-count: 1; }
-
-.nosotrosMainS1Titulo p {
-  font-size: 1.5rem;
-  font-weight: 1;
-  padding: 0.8em 2em;
-  color: white;
-  background-color: #000000b4; }
+  .nosotrosMainS1 h1 {
+    border: #00fff7 solid 1px;
+    font-size: calc(0.5vw + 8rem);
+    text-transform: uppercase;
+    background-image: url(../assets/img/paraFondoTexto2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: animacionFondo;
+    animation-duration: 5s;
+    animation-iteration-count: 1; }
+  .nosotrosMainS1 p {
+    font-size: 1.5rem;
+    font-weight: 1;
+    padding: 0.8em 2em;
+    color: white;
+    background-color: #000000b4; }
 
 .nosotrosMainS2Historia {
   background-color: #bc5b5b96;
@@ -1081,6 +1077,10 @@
     grid-column: 1/6; }
   .art7 iframe {
     height: 15rem; }
+  /* *********Nosotros******* */
+  .nosotrosMainS1 h1 {
+    border: blue solid 2px;
+    font-size: calc(0.5vw + 5rem); }
   /* *********Productos******* */
   .swiper-slide, .swipersm {
     width: 10rem; }
@@ -1104,6 +1104,11 @@
     grid-column: span 3; } }
 
 @media (max-width: 480px) {
+  /* *********Nosotros******* */
+  .nosotrosMainS1 h1 {
+    border: blue solid 2px;
+    font-size: calc(1vw + 3rem); }
+  /* *********Productos******* */
   .productoMainS2InfoProductoPrecioIcon a {
     width: 1.6rem;
     padding: 0em 0.4em 0.2em 0.4em; } }

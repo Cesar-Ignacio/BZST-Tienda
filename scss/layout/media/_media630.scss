@@ -46,7 +46,14 @@
         height: 15rem;
     }
 
-  
+     /* *********Nosotros******* */
+     .nosotrosMainS1{
+       h1{
+        border:blue solid 2px;
+        font-size: calc(0.5vw + 5rem);
+       }  
+     }
+    
 
     /* *********Productos******* */
     .swiper-slide {

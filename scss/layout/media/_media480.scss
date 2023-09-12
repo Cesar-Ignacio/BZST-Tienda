@@ -1,4 +1,14 @@
 @media (max-width:480px){
+    
+      /* *********Nosotros******* */
+    .nosotrosMainS1{
+        h1{
+         border:blue solid 2px;
+         font-size: calc(1vw + 3rem);
+        }  
+      }
+    
+      /* *********Productos******* */
     .productoMainS2InfoProductoPrecioIcon a {
         width: 1.6rem;
         padding: 0em 0.4em 0.2em 0.4em; 
