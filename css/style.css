@@ -359,7 +359,7 @@
     transform: scale3d(1, 1, 1); } }
 
 .nosotrosMainS1 {
-  background-image: url(../assets/img/Nuevo.jpg);
+  background-image: url("https://i.postimg.cc/vTFXwZkM/Nuevo.jpg");
   background-size: cover;
   font-family: "Josefin Sans", sans-serif;
   min-height: 35rem;
@@ -372,7 +372,7 @@
   .nosotrosMainS1 h1 {
     font-size: calc(0.5vw + 8rem);
     text-transform: uppercase;
-    background-image: url(../assets/img/paraFondoTexto2.jpg);
+    background-image: url("https://i.postimg.cc/ydkQm54g/para-Fondo-Texto2.jpg");
     background-size: cover;
     background-position-y: center;
     background-clip: text;
@@ -618,6 +618,16 @@
   .art7 iframe {
     width: 100%; }
 
+/*Animación Nosotros*/
+@keyframes animacionFondo {
+  0% {
+    background-position-y: 8px;
+    background-image: url("https://i.postimg.cc/QxbQMbwR/para-Fondo-Texto3.jpg"); }
+  50% {
+    background-image: url("https://i.postimg.cc/YSgB6h6B/para-Fondo-Texto.jpg"); }
+  100% {
+    background-image: url("https://i.postimg.cc/ydkQm54g/para-Fondo-Texto2.jpg"); } }
+
 .productoMainS1 {
   font-family: "Josefin Sans", sans-serif;
   color: black;
@@ -645,11 +655,11 @@
   border: #00ddfa solid 0px; }
 
 .contactoMainS1 {
-  background-image: url(../assets/img/contacto3.jpg);
+  background-image: url("https://i.postimg.cc/x8myXrN9/contacto3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  font-family: 'Josefin Sans', sans-serif;
+  min-height: 35rem;
+  font-family: "Josefin Sans", sans-serif;
   color: white;
   display: flex;
   align-items: center; }
@@ -659,122 +669,88 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   gap: 1rem;
-  padding: 1.5em; }
+  padding: 1em; }
+  .contactoMainS1InfoPrincipal h1 {
+    font-size: 3rem; }
 
-.contactoMainS1InfoPrincipal h1 {
-  font-size: 3rem;
-  margin-bottom: .8rem; }
-
-.contactoMainS1ContenedorImg {
-  /* background-color: red; */
+.contactoMainS1ContenedorIcon {
   padding: 0.2em;
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
-
-.contactoMainS1ContenedorImg img {
-  /* background-color: blue; */
-  width: 1.5rem; }
+  .contactoMainS1ContenedorIcon svg {
+    fill: white;
+    width: 1.5rem; }
 
 .contactoMainS2 {
-  font-family: 'Josefin Sans', sans-serif;
-  /* background-color: #4f5f6f; */
-  display: grid;
+  font-family: "Josefin Sans", sans-serif;
   padding: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-  row-gap: 0.5rem;
-  column-gap: 0.5rem; }
-
-.contactoMainS2 h2 {
-  text-align: center;
-  margin: 1.5rem;
-  font-size: 2.5rem;
-  grid-row: 1;
-  grid-column: 1/-1; }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  gap: 1rem; }
+  .contactoMainS2 h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    grid-row: 1;
+    grid-column: 1/-1;
+    color: #1E1D1D; }
 
 .contactoMainS2ContenedoForm {
-  /* background-color: #4c301994; */
-  color: black;
   width: 80%;
+  height: fit-content;
   padding: 0.5em;
-  border-right: 0.3rem solid #8a6060;
+  border-right: 0.3rem solid #1E1D1D;
   justify-self: center;
   display: flex;
   justify-content: center;
-  scroll-margin-top: 7rem; }
-
-.contactoMainS2ContenedoForm form {
-  /* background-color: #0F5EA1; */
-  width: 90%;
-  padding: 0.5em;
-  font-family: 'Josefin Sans', sans-serif; }
-
-.contactoMainS2ContenedoForm select {
-  width: 35%;
-  height: 2rem;
-  margin: 1rem 0;
-  font-family: 'Josefin Sans', sans-serif; }
-
-.contactoMainS2ContenedoForm input {
-  font-family: 'Josefin Sans', sans-serif;
-  width: 100%;
-  height: 2rem;
-  margin-top: 1rem;
-  padding: 0.5em;
-  border-style: solid;
-  border-top: none;
-  border-bottom: none;
-  /* border-radius: 0.2rem; */ }
-
-.contactoMainS2ContenedoForm textarea {
-  /* background-color: red; */
-  font-family: 'Josefin Sans', sans-serif;
-  width: 100%;
-  height: 5rem;
-  padding: 0.5em;
-  border: #323436 solid 0.2rem; }
-
-.contactoMainS2ContenedoForm button {
-  background-color: #151516ea;
-  padding: 0.5em 1rem;
-  color: white;
-  letter-spacing: .125rem;
-  border-style: none;
-  border-radius: .3125rem; }
+  scroll-margin-top: 5rem; }
+  .contactoMainS2ContenedoForm form {
+    width: 90%;
+    padding: 0.5em; }
+    .contactoMainS2ContenedoForm form select {
+      width: 35%;
+      height: 2rem;
+      margin: 1rem 0; }
+    .contactoMainS2ContenedoForm form input {
+      width: 100%;
+      height: 2rem;
+      margin: 0.5rem 0;
+      padding: 0.5em; }
+    .contactoMainS2ContenedoForm form textarea {
+      width: 100%;
+      height: 5rem;
+      padding: 0.5em;
+      border: #1E1D1D solid 0.2rem; }
+    .contactoMainS2ContenedoForm form button {
+      border: none; }
 
 .contactoMainS2InfoCliente {
-  /* background-color: red; */
   width: 80%;
   justify-self: center; }
-
-.contactoMainS2InfoCliente h3 {
-  font-size: 2rem;
-  margin: 1rem 0;
-  color: white; }
+  .contactoMainS2InfoCliente h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: white; }
 
 .contactoMainS2Info {
   /* background-color: #22232431; */
   background-color: rgba(249, 0, 63, 0.583);
   padding: 0.5rem;
-  margin-bottom: 2rem;
-  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
   border-radius: 0.2rem;
-  scroll-margin-top: 7rem; }
-
-.contactoMainS2Info span {
-  color: #0F5EA1; }
+  scroll-margin-top: 5rem; }
+  .contactoMainS2Info span {
+    color: #0F5EA1; }
 
 .contactoMainS2Sucursales {
   background-color: #0864eea9;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  scroll-margin-top: 7rem; }
-
-.contactoMainS2Sucursales iframe {
-  width: 100%;
-  border-radius: 5px; }
+  scroll-margin-top: 5rem; }
+  .contactoMainS2Sucursales iframe {
+    width: 100%;
+    border-radius: 5px; }
 
 .carroMainS1 {
   display: grid;
@@ -1052,6 +1028,16 @@
   /* *********Productos******* */
   .swiper-slide, .swipersm {
     width: 10rem; }
+  /* *********Contacto******* */
+  .contactoMainS2 {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); }
+  .contactoMainS2ContenedoForm {
+    width: 100%;
+    border: 0; }
+    .contactoMainS2ContenedoForm form {
+      width: 100%; }
+  .contactoMainS2InfoCliente {
+    width: 100%; }
   /*************Carrtio*********/
   .carroMainS1Destalles {
     justify-content: space-between; }
@@ -1081,12 +1067,3 @@
     padding: 0em 0.4em 0.2em 0.4em; } }
 
 /* KeyFrames*/
-/*Animación Nosotros*/
-@keyframes animacionFondo {
-  0% {
-    background-position-y: 8px;
-    background-image: url(../assets/img/paraFondoTexto3.jpg); }
-  50% {
-    background-image: url(../assets/img/paraFondoTexto.jpg); }
-  100% {
-    background-image: url(../assets/img/paraFondoTexto2.jpg); } }

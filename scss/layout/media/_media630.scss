@@ -46,25 +46,45 @@
         height: 15rem;
     }
 
-     /* *********Nosotros******* */
-     .nosotrosMainS1{
-       h1{
-       // border:blue solid 2px;
-        font-size: calc(0.5vw + 5rem);
-       }  
-     }
-    
+    /* *********Nosotros******* */
+    .nosotrosMainS1 {
+        h1 {
+            // border:blue solid 2px;
+            font-size: calc(0.5vw + 5rem);
+        }
+    }
+
 
     /* *********Productos******* */
     .swiper-slide {
         width: 10rem;
     }
 
+    /* *********Contacto******* */
+
+    .contactoMainS2 {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+
+    }
+
+    .contactoMainS2ContenedoForm {
+        width: 100%;
+        border: 0;
+
+        form {
+            width: 100%;
+        }
+    }
+
+    .contactoMainS2InfoCliente {
+        width: 100%;
+    }
 
     /*************Carrtio*********/
-    .carroMainS1Destalles{
+    .carroMainS1Destalles {
         justify-content: space-between;
-        a{
+
+        a {
             margin-right: 0;
         }
     }

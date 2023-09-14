@@ -1,9 +1,9 @@
 .contactoMainS1 {
-    background-image: url(../assets/img/contacto3.jpg);
+    background-image: url("https://i.postimg.cc/x8myXrN9/contacto3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
+    min-height: 35rem;
+    font-family: $fuentePrincipal;
     color: white;
     display: flex;
     align-items: center;
@@ -14,139 +14,117 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     gap: 1rem;
-    padding: 1.5em;
+    padding: 1em;
+
+    h1 {
+        font-size: 3rem;
+    }
 }
 
-.contactoMainS1InfoPrincipal h1 {
-    font-size: 3rem;
-    margin-bottom: .8rem;
-}
 
-.contactoMainS1ContenedorImg {
-    /* background-color: red; */
+.contactoMainS1ContenedorIcon {
+    // border: red solid 1px;
     padding: 0.2em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
 
-.contactoMainS1ContenedorImg img {
-    /* background-color: blue; */
-    width: 1.5rem;
+    svg {
+        fill: white;
+        width: 1.5rem;
+    }
+
 }
 
 .contactoMainS2 {
-    font-family: 'Josefin Sans', sans-serif;
-    /* background-color: #4f5f6f; */
-    display: grid;
+    //border: #0F5EA1 solid 1px;
+    font-family: $fuentePrincipal;
     padding: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    row-gap: 0.5rem;
-    column-gap: 0.5rem;
-}
-
-.contactoMainS2 h2 {
-    text-align: center;
-    margin: 1.5rem;
-    font-size: 2.5rem;
-    grid-row: 1;
-    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    gap: 1rem;
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        grid-row: 1;
+        grid-column: 1/-1;
+        color: $colorHeader;
+    }
 }
 
 .contactoMainS2ContenedoForm {
-    /* background-color: #4c301994; */
-    color: black;
     width: 80%;
+    height: fit-content;
     padding: 0.5em;
-    border-right: 0.3rem solid #8a6060;
+    border-right: 0.3rem solid $colorHeader;
     justify-self: center;
     display: flex;
     justify-content: center;
-    scroll-margin-top: 7rem;
-}
+    scroll-margin-top: 5rem;
 
-.contactoMainS2ContenedoForm form {
-    /* background-color: #0F5EA1; */
-    width: 90%;
-    padding: 0.5em;
-    font-family: 'Josefin Sans', sans-serif;
+    form {
+        //border: #0F5EA1 solid 1px;
+        width: 90%;
+        padding: 0.5em;
 
-}
+        select {
+            width: 35%;
+            height: 2rem;
+            margin: 1rem 0;
+        }
 
-.contactoMainS2ContenedoForm select {
-    width: 35%;
-    height: 2rem;
-    margin: 1rem 0;
-    font-family: 'Josefin Sans', sans-serif;
+        input {
+            width: 100%;
+            height: 2rem;
+            margin: 0.5rem 0;
+            padding: 0.5em;
+        }
 
-}
+        textarea {
+            width: 100%;
+            height: 5rem;
+            padding: 0.5em;
+            border: $colorHeader solid 0.2rem;
+        }
 
-.contactoMainS2ContenedoForm input {
-    font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
-    height: 2rem;
-    margin-top: 1rem;
-    padding: 0.5em;
-    border-style: solid;
-    border-top: none;
-    border-bottom: none;
-    /* border-radius: 0.2rem; */
-}
-
-.contactoMainS2ContenedoForm textarea {
-    /* background-color: red; */
-    font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
-    height: 5rem;
-    padding: 0.5em;
-    border: #323436 solid 0.2rem;
-}
-
-.contactoMainS2ContenedoForm button {
-    background-color: #151516ea;
-    padding: 0.5em 1rem;
-    color: white;
-    letter-spacing: .125rem;
-    border-style: none;
-    border-radius: .3125rem;
+        button {
+            border: none;
+        }
+    }
 }
 
 .contactoMainS2InfoCliente {
-    /* background-color: red; */
     width: 80%;
     justify-self: center;
-}
-
-.contactoMainS2InfoCliente h3 {
-    font-size: 2rem;
-    margin: 1rem 0;
-    color: white;
+    h3 {
+        font-size: 2rem;
+        margin: 1rem 0;
+        color: white;
+    }
 }
 
 .contactoMainS2Info {
     /* background-color: #22232431; */
     background-color: rgba(249, 0, 63, 0.583);
     padding: 0.5rem;
-    margin-bottom: 2rem;
-    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
     border-radius: 0.2rem;
-    scroll-margin-top: 7rem;
-}
+    scroll-margin-top: 5rem;
 
-.contactoMainS2Info span {
-    color: #0F5EA1;
+    span {
+        color: #0F5EA1;
+    }
 }
 
 .contactoMainS2Sucursales {
     background-color: #0864eea9;
     padding: 0.5rem;
     border-radius: 0.2rem;
-    scroll-margin-top: 7rem;
-}
-
-.contactoMainS2Sucursales iframe {
-    width: 100%;
-    border-radius: 5px;
+    scroll-margin-top: 5rem;
+    
+    iframe {
+        width: 100%;
+        border-radius: 5px;
+    }
 }

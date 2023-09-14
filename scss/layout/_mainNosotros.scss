@@ -1,6 +1,6 @@
 .nosotrosMainS1 {
     //border: yellow solid 1px;
-    background-image: url(../assets/img/Nuevo.jpg);
+    background-image: url("https://i.postimg.cc/vTFXwZkM/Nuevo.jpg");
     background-size: cover;
     font-family: $fuentePrincipal;
     min-height: 35rem;
@@ -15,7 +15,7 @@
         // border:  rgb(0, 255, 247) solid 1px;
         font-size: calc(0.5vw + 8rem);
         text-transform: uppercase;
-        background-image: url(../assets/img/paraFondoTexto2.jpg);
+        background-image: url("https://i.postimg.cc/ydkQm54g/para-Fondo-Texto2.jpg");
         background-size: cover;
         background-position-y: center;
         background-clip: text;
@@ -381,4 +381,21 @@
     iframe {
         width: 100%;
     }
+}
+
+/*Animación Nosotros*/
+@keyframes animacionFondo {
+    0% {
+        background-position-y: 8px;
+        background-image: url("https://i.postimg.cc/QxbQMbwR/para-Fondo-Texto3.jpg");
+    }
+
+    50% {
+        background-image: url("https://i.postimg.cc/YSgB6h6B/para-Fondo-Texto.jpg");
+    }
+
+    100% {
+        background-image: url("https://i.postimg.cc/ydkQm54g/para-Fondo-Texto2.jpg");
+    }
+
 }

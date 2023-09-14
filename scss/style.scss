@@ -43,19 +43,3 @@
 
 /* KeyFrames*/
 
-/*Animación Nosotros*/
-@keyframes animacionFondo {
-    0% {
-        background-position-y: 8px;
-        background-image: url(../assets/img/paraFondoTexto3.jpg);
-    }
-
-    50% {
-        background-image: url(../assets/img/paraFondoTexto.jpg);
-    }
-
-    100% {
-        background-image: url(../assets/img/paraFondoTexto2.jpg);
-    }
-
-}
