@@ -13,4 +13,8 @@ En esta sección podrás contactar con nosotros para hacer cualquier consulta, s
 - ### Carrito:
 En esta podras ver los productos agregados al carrito, un resumen de compra con una variadad de opciones.
 ## Tecnologías utilizadas
-![dwd](https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_scss_icon_130177.png "dwd")
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
+  </a>
+</p>
