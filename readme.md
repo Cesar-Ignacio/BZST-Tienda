@@ -1,4 +1,4 @@
-# BZST
+# BZST en desarrollo
 Sitio web estático de ventas de juguetes online, que ofrece una gran variedad de juguetes para niños y niñas de todas las edades y gustos. Aquí podrás encontrar juguetes educativos, divertidos, originales y de calidad, a precios competitivos y con envíos rápidos y seguros.
 ## Secciones
 El sitio cuenta con una barra de navegación que esta visible en todas las paginas, para facilita el acceso a las diferentes secciones.
@@ -31,7 +31,7 @@ En esta página podras ver los productos agregados al carrito, un resumen de com
 
 ## Tecnologías utilizadas
 [![My Skills](https://skillicons.dev/icons?i=git,html,css,sass)](https://skillicons.dev)
-## Editor 
-[![My Skills](https://skillicons.dev/icons?i=vscode)](https://skillicons.dev)
+## Recursos 
+[![My Skills](https://skillicons.dev/icons?i=vscode,figma)](https://skillicons.dev)
 
 
