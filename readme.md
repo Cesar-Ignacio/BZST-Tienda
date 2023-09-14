@@ -30,7 +30,7 @@ En esta página podrás ver los productos agregados al carrito, así como un res
 ![Vídeo sin título ‐ Hecho con Clipchamp (3)](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/7a9545f1-9c03-4e30-84d4-2c45b40c98d8)
 
 
-##Servidores
+## Servidores
 
 `Vercel` : <https://bzst-tienda.vercel.app/>
 
