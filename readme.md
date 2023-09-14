@@ -13,8 +13,4 @@ En esta sección podrás contactar con nosotros para hacer cualquier consulta, s
 - ### Carrito:
 En esta podras ver los productos agregados al carrito, un resumen de compra con una variadad de opciones.
 ## Tecnologías utilizadas
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
-  </a>
-</p>
+[![My Skills](https://skillicons.dev/icons?i=aws,gcp,azure,react,vue,flutter&perline=3)](https://skillicons.dev)
