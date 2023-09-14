@@ -1,11 +1,11 @@
+### Features
+[![V-deo-sin-t-tulo-Hecho-con-Clipchamp.gif](https://i.postimg.cc/Cxs2cfvj/V-deo-sin-t-tulo-Hecho-con-Clipchamp.gif)](https://postimg.cc/JstKntCn)
 # BZST
 Sitio web estático de ventas de juguetes online, que ofrece una gran variedad de juguetes para niños y niñas de todas las edades y gustos. Aquí podrás encontrar juguetes educativos, divertidos, originales y de calidad, a precios competitivos y con envíos rápidos y seguros.
 ## Secciones
 El sitio cuenta con una barra de navegación que esta visible en todas las paginas, para facilita el acceso a las diferentes secciones.
 - ### Inicio:
 En esta sección se mostraran los produrctos más buscados, las categorías y las marcas de juguestes.
-  [![V-deo-sin-t-tulo-Hecho-con-Clipchamp.gif]
-  (https://i.postimg.cc/Cxs2cfvj/V-deo-sin-t-tulo-Hecho-con-Clipchamp.gif)](https://postimg.cc/JstKntCn)
 - ### Nosotros:
 En esta seccion se cuenta un poco la historia de la empresa, el equipo que la conforma, las opiones de los cliente y por ultimo las novedades y noticias sobre la empresa.
 - ### Productos:
