@@ -33,6 +33,7 @@ En esta página podras ver los productos agregados al carrito, un resumen de com
 ##Servidores
 
 `<Vercel>` : <https://bzst-tienda.vercel.app/>
+
 `<netlify>` : <https://bzst.netlify.app/>
 
 ## Tecnologías utilizadas
