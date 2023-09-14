@@ -32,6 +32,6 @@ En esta página podras ver los productos agregados al carrito, un resumen de com
 ## Tecnologías utilizadas
 [![My Skills](https://skillicons.dev/icons?i=git,html,css,sass)](https://skillicons.dev)
 ## Recursos 
-[![My Skills](https://skillicons.dev/icons?i=vscode,figma)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=vscode,figma)](https://www.figma.com/file/Ie8IiZEcSy0LVMgbfGCgiA/ProyectoFinal?type=design&node-id=64%3A21&mode=design&t=oV7fFcxrHbECgDR1-1)
 
 
