@@ -4,7 +4,7 @@ Sitio web estático de ventas de juguetes online, que ofrece una gran variedad d
 El sitio cuenta con una barra de navegación que esta visible en todas las paginas, para facilita el acceso a las diferentes secciones.
 - ### Inicio:
 En esta sección se mostraran los produrctos más buscados, las categorías y las marcas de juguestes.
-<img src="https://cdn.dribbble.com/users/2158774/screenshots/4416038/music-boy.gif" height=270px width=100%>
+<img src="https://cdn.dribbble.com/users/2158774/screenshots/4416038/music-boy.gif" height=270px width=50%>
 - ### Nosotros:
 En esta seccion se cuenta un poco la historia de la empresa, el equipo que la conforma, las opiones de los cliente y por ultimo las novedades y noticias sobre la empresa.
 - ### Productos:
