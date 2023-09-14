@@ -1,5 +1,9 @@
 # BZST en desarrollo
 Sitio web estático de ventas de juguetes online, que ofrece una gran variedad de juguetes para niños y niñas de todas las edades y gustos. Aquí podrás encontrar juguetes educativos, divertidos, originales y de calidad, a precios competitivos y con envíos rápidos y seguros.
+
+[![Twitter ](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://bzst.netlify.app)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/iampavangandhi)
+
 ## Secciones
 El sitio cuenta con una barra de navegación que esta visible en todas las paginas, para facilita el acceso a las diferentes secciones.
 - ### Inicio:
