@@ -240,21 +240,8 @@
     margin: 0;
     font-size: calc(1vw + 1.2rem);
     padding: 0.5em 0; }
-
-.inicioMainS1Enlace {
-  text-decoration: none; }
-  .inicioMainS1Enlace:hover::before {
-    content: "Ver Producto";
-    font-size: 1.2rem;
-    display: block;
-    color: #020202; }
-  .inicioMainS1Enlace .svgOjo {
-    transition: all linear 0.3s;
-    width: 2rem;
-    fill: #020202; }
-    .inicioMainS1Enlace .svgOjo:hover {
-      width: 5rem;
-      fill: #E91E63; }
+  .inicioMainS1 .carousel {
+    width: 100%; }
 
 .inicioMainS1Waves {
   fill: white;

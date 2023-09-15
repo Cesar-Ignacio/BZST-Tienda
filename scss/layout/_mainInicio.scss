@@ -1,5 +1,5 @@
 .inicioMainS1 {
-    //border: blue solid 2px;
+    //border: rgb(106, 255, 0) solid 2px;
     font-family: $fuentePrincipal;
     height: auto;
     position: relative;
@@ -19,29 +19,12 @@
         font-size: calc(1vw + 1.2rem);
         padding: 0.5em 0;
     }
-}
-
-.inicioMainS1Enlace {
-    text-decoration: none;
-
-    &:hover::before {
-        content: "Ver Producto";
-        font-size: 1.2rem;
-        display: block;
-        color: #020202;
-    }
-
-    .svgOjo {
-        transition: all linear 0.3s;
-        width: 2rem;
-        fill: #020202;
-
-        &:hover {
-            width: 5rem;
-            fill: $colorSvgOjo;
-        }
+    .carousel {
+        width: 100%;
     }
 }
+
+
 
 .inicioMainS1Waves {
     // border: #00ddfa solid 1px;
