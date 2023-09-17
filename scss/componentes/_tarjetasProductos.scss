@@ -49,8 +49,9 @@
     padding: 0.5rem;
     color: white;
 
-    span {
-        font-size: calc(0.5vw + 0.5rem);
+    strong {
+        font-size: calc(0.5vw + 0.6rem);
+        font-weight: normal;
     }
 
     p {

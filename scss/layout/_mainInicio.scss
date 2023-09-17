@@ -19,6 +19,7 @@
         font-size: calc(1vw + 1.2rem);
         padding: 0.5em 0;
     }
+
     .carousel {
         width: 100%;
     }
@@ -79,9 +80,11 @@
         justify-content: center;
         color: white;
         transition: all linear 0.5s;
-        strong{
+
+        strong {
             font-size: calc(1vw + 1rem);
         }
+
         &:hover {
             opacity: 0;
         }

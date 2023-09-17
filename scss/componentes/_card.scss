@@ -26,18 +26,18 @@
     }
 }
 
-.cardInfo {
+.cardMain {
     // border: blue solid 1px;
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     text-align: center;
     padding-bottom: 0.5em;
 
-    span {
-        font-size: calc(0.5vw + 1rem);
+    strong {
+        font-size: calc(1vw + 0.5rem);
     }
 
     p {
-        font-size: calc(0.5vw + 0.8rem);
+        font-size: calc(1vw + 0.4rem);
         font-weight: 1;
     }
 
@@ -77,11 +77,15 @@
     color: $colorHeader;
 }
 
-.cardV1Info {
-    @extend .cardInfo;
-    //background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
-    //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+.cardV1Main {
+    @extend .cardMain;
     background-image: linear-gradient(to bottom, #fdfcfb 0%, #e2d1c3 100%);
+   // border: #f77062 solid 1px;
+    p {
+        font-size: calc(1vw + 0.3rem);
+        margin: 0;
+        font-weight: 1;
+    }
 }
 
 .cardV1Footer {
@@ -91,5 +95,35 @@
         svg {
             fill: $colorHeader;
         }
+    }
+}
+
+.cardV1Descripcion {
+
+    position: absolute;
+    top: 0;
+    padding: 0.2em;
+
+    svg{
+        width: 1.5rem;
+        fill: $colorHeader;
+    }
+
+    p {
+        color: white;
+        display: none;
+        text-align: center;
+        font-size: calc(1vw + 0.4rem);
+    }
+
+    &:hover {
+        background-color: rgba(41, 40, 40, 0.562);
+        svg{
+            filter:invert(1);
+        }
+        p {
+            display: block;
+        }
+
     }
 }

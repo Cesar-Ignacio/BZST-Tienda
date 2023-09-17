@@ -76,8 +76,9 @@
   width: 100%;
   padding: 0.5rem;
   color: white; }
-  .productoMainS2InfoProducto span {
-    font-size: calc(0.5vw + 0.5rem); }
+  .productoMainS2InfoProducto strong {
+    font-size: calc(0.5vw + 0.6rem);
+    font-weight: normal; }
   .productoMainS2InfoProducto p {
     margin: 0;
     font-size: calc(0.4vw + 0.4rem); }
@@ -124,14 +125,14 @@
     height: 100%;
     transition: all linear 0.3s; }
 
-.cardInfo, .cardV1Info {
+.cardMain, .cardV1Main {
   background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
   text-align: center;
   padding-bottom: 0.5em; }
-  .cardInfo span, .cardV1Info span {
-    font-size: calc(0.5vw + 1rem); }
-  .cardInfo p, .cardV1Info p {
-    font-size: calc(0.5vw + 0.8rem);
+  .cardMain strong, .cardV1Main strong {
+    font-size: calc(1vw + 0.5rem); }
+  .cardMain p, .cardV1Main p {
+    font-size: calc(1vw + 0.4rem);
     font-weight: 1; }
 
 .cardFooter, .cardV1Footer {
@@ -157,11 +158,34 @@
   box-shadow: 0px 0px 5px 2px #716e6e;
   color: #1E1D1D; }
 
-.cardV1Info {
+.cardV1Main {
   background-image: linear-gradient(to bottom, #fdfcfb 0%, #e2d1c3 100%); }
+  .cardV1Main p {
+    font-size: calc(1vw + 0.3rem);
+    margin: 0;
+    font-weight: 1; }
 
 .cardV1Footer a svg {
   fill: #1E1D1D; }
+
+.cardV1Descripcion {
+  position: absolute;
+  top: 0;
+  padding: 0.2em; }
+  .cardV1Descripcion svg {
+    width: 1.5rem;
+    fill: #1E1D1D; }
+  .cardV1Descripcion p {
+    color: white;
+    display: none;
+    text-align: center;
+    font-size: calc(1vw + 0.4rem); }
+  .cardV1Descripcion:hover {
+    background-color: rgba(41, 40, 40, 0.562); }
+    .cardV1Descripcion:hover svg {
+      filter: invert(1); }
+    .cardV1Descripcion:hover p {
+      display: block; }
 
 /*---------------Header----------------*/
 .header {
