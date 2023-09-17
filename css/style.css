@@ -280,6 +280,8 @@
     justify-content: center;
     color: white;
     transition: all linear 0.5s; }
+    .contenedorImg .inicioMainS3Categoria strong {
+      font-size: calc(1vw + 1rem); }
     .contenedorImg .inicioMainS3Categoria:hover {
       opacity: 0; }
 

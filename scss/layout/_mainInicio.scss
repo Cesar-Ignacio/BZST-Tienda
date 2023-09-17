@@ -79,8 +79,9 @@
         justify-content: center;
         color: white;
         transition: all linear 0.5s;
-
-
+        strong{
+            font-size: calc(1vw + 1rem);
+        }
         &:hover {
             opacity: 0;
         }
