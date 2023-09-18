@@ -16,6 +16,14 @@
     .nosotrosMainS2Texto{
         grid-column: 1/3;
     }
+    .nosotrosMainS4Clientes {
+        p {
+            //border: red solid 1px;
+            font-size: calc(1vw + 0.9rem);
+            width: 90%;
+            padding: 0;
+        }
+    }
     /* *********Productos******* */
     .swiper-slide {
         width: 15rem;
