@@ -303,6 +303,10 @@
         display: none;
 
     }
+    
+    em {
+        background-color: #a42bb963;
+    }
 
     &:hover {
         background-color: #fbf8f8;
@@ -336,7 +340,7 @@
 .nosotrosMainS5ContenedorImg {
     // border: rgb(236, 4, 236) solid 1px;
     width: 100%;
-    height: 50%;
+    //height: 50%;
     padding: 0.1em;
 
     img {
@@ -349,9 +353,7 @@
     grid-column: 1;
     grid-row: 1/4;
 
-    em {
-        background-color: #a42bb963;
-    }
+   
 }
 
 .art2 {
@@ -381,18 +383,11 @@
     grid-row: 3/6;
     grid-column: 4;
 
-    em {
-        background-color: #1577cdc9;
-    }
 }
 
 .art6 {
     grid-row: 1/4;
     grid-column: 5;
-
-    em {
-        background-color: yellow;
-    }
 }
 
 .art7 {
