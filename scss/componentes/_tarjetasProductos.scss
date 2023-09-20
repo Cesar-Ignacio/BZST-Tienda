@@ -1,5 +1,6 @@
 .productoMainS2Producto {
-    border: $colorFooter solid 1px;
+    justify-content: space-between;/**IMPORTAMTE*/
+    //border: $colorFooter solid 1px;
     border-radius: 0.5rem;
     overflow: hidden;
     padding: 0;
@@ -28,7 +29,7 @@
 }
 
 .productoMainS2ContenedorImg {
-    border: rgba(0, 26, 255, 0.774) solid 1px;
+    //border: rgba(0, 26, 255, 0.774) solid 1px;
     width: 80%;
     overflow: hidden;
     border-radius: 0.5rem;
@@ -42,10 +43,7 @@
 }
 
 .productoMainS2InfoProducto {
-    // background: linear-gradient(to left, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
-    // background-blend-mode: multiply, multiply;
     //border: #ffffff solid 1px;
-    margin-bottom: 2.8rem;
     background-color: $colorTarjetaProducto;
     width: 100%;
     padding: 0.5rem;
@@ -63,15 +61,14 @@
 }
 
 .productoMainS2InfoProductoPrecioIcon {
-    position: absolute;
-    bottom: 0;
     //border: yellow solid 1px;
+    width: 100%;
     strong {
         color: rgb(47, 255, 0);
     }
 
     .productoMainS2InfoProductoContenedorIcon {
-       // border: beige solid 1px;
+       //border: beige solid 1px;
 
         a {
 

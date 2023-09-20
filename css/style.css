@@ -46,7 +46,8 @@
   max-width: 15rem; }
 
 .productoMainS2Producto {
-  border: #1E1D1D solid 1px;
+  justify-content: space-between;
+  /**IMPORTAMTE*/
   border-radius: 0.5rem;
   overflow: hidden;
   padding: 0;
@@ -67,7 +68,6 @@
     z-index: -1; }
 
 .productoMainS2ContenedorImg {
-  border: rgba(0, 26, 255, 0.774) solid 1px;
   width: 80%;
   overflow: hidden;
   border-radius: 0.5rem; }
@@ -78,7 +78,6 @@
     transition: all linear 0.5s; }
 
 .productoMainS2InfoProducto {
-  margin-bottom: 2.8rem;
   background-color: #1E1D1D;
   width: 100%;
   padding: 0.5rem;
@@ -91,8 +90,7 @@
     font-size: calc(0.4vw + 0.4rem); }
 
 .productoMainS2InfoProductoPrecioIcon {
-  position: absolute;
-  bottom: 0; }
+  width: 100%; }
   .productoMainS2InfoProductoPrecioIcon strong {
     color: #2fff00; }
   .productoMainS2InfoProductoPrecioIcon .productoMainS2InfoProductoContenedorIcon a {
