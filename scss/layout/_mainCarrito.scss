@@ -14,14 +14,14 @@
     @include shadowCarrito();
 
     h1 {
-
         padding: 0.2em;
-        font-size: calc(1vw + 2.2rem);
+        font-size: clamp(1.5rem, 5vw, 3rem);
         text-align: center;
     }
 }
 
-.carroMainS1Producto {//poner como componente
+.carroMainS1Producto {
+    //poner como componente
     background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     margin-bottom: 1rem;
     padding: 0.5em;
@@ -32,7 +32,7 @@
 
 .carroMainS1ContenedorImg {
     //border: blue solid 1px;
-    width: 10rem;
+    width: clamp(10rem, 8vw, 15rem);
     height: fit-content;
 
     img {
@@ -58,15 +58,21 @@
     flex-wrap: wrap;
 
     // logo de producto
-    img {
-
-        width: 4rem;
-        //min-height: 4rem;
+    svg {
+        fill: #0F5EA1;
+        //width: 2rem;
+        width: clamp(3rem, 10vw, 7rem);
     }
 
     // formulario cantidod
     form {
         width: 8rem;
+        border-radius: 1rem;
+
+        .bntInput {
+            width: 1rem;
+            fill: red;
+        }
     }
 
     .carroMainS1Precio {
@@ -93,7 +99,7 @@
 .carroMainS1ResumenCompra {
     padding: 1em 0.5em;
     width: 100%;
-    grid-column:2;
+    grid-column: 2;
     @include shadowCarrito();
 
     h2 {
@@ -143,6 +149,7 @@
         // border: red solid 1px;
         padding: 0.4em;
         margin: 0;
+
         li {
             list-style: none;
 

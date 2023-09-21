@@ -714,7 +714,7 @@
   gap: 1rem;
   padding: 1em; }
   .contactoMainS1InfoPrincipal h1 {
-    font-size: clamp(1.8rem, 5vw, 3rem); }
+    font-size: clamp(2rem, 5vw, 3rem); }
 
 .contactoMainS1ContenedorIcon {
   padding: 0.2em;
@@ -811,7 +811,7 @@
   box-shadow: 0px 0px 1.5rem 0.1rem rgba(128, 128, 128, 0.351); }
   .carroMainS1CarritoCompra h1 {
     padding: 0.2em;
-    font-size: calc(1vw + 2.2rem);
+    font-size: clamp(1.5rem, 5vw, 3rem);
     text-align: center; }
 
 .carroMainS1Producto {
@@ -822,7 +822,7 @@
   gap: 1rem; }
 
 .carroMainS1ContenedorImg {
-  width: 10rem;
+  width: clamp(10rem, 8vw, 15rem);
   height: fit-content; }
   .carroMainS1ContenedorImg img {
     width: 100%;
@@ -839,10 +839,15 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
-  .carroMainS1Descripcion img {
-    width: 4rem; }
+  .carroMainS1Descripcion svg {
+    fill: #0F5EA1;
+    width: clamp(3rem, 10vw, 7rem); }
   .carroMainS1Descripcion form {
-    width: 8rem; }
+    width: 8rem;
+    border-radius: 1rem; }
+    .carroMainS1Descripcion form .bntInput {
+      width: 1rem;
+      fill: red; }
   .carroMainS1Descripcion .carroMainS1Precio {
     font-size: calc(0.5vw + 1rem); }
 
