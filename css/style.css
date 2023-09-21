@@ -683,6 +683,8 @@
   padding-top: 1rem; }
 
 .productoMainS2Filtro {
+  position: sticky;
+  top: 4rem;
   height: fit-content; }
   .productoMainS2Filtro .dropbtn {
     width: 100%; }
@@ -712,7 +714,7 @@
   gap: 1rem;
   padding: 1em; }
   .contactoMainS1InfoPrincipal h1 {
-    font-size: 3rem; }
+    font-size: clamp(1.8rem, 5vw, 3rem); }
 
 .contactoMainS1ContenedorIcon {
   padding: 0.2em;
@@ -1065,8 +1067,13 @@
   /* *********Productos******* */
   .swiper-slide, .swipersm {
     width: 15rem; }
-  .productoMainS2Filtro .dropbtn {
-    width: auto; } }
+  .productoMainS2Filtro {
+    position: static; }
+    .productoMainS2Filtro .dropbtn {
+      width: auto; }
+  /* *********Contacto******* */
+  .contactoMainS1InfoPrincipal {
+    width: 100%; } }
 
 @media (max-width: 630px) {
   /**********Inicio******* */
@@ -1080,8 +1087,6 @@
   .swiper-slide, .swipersm {
     width: 10rem; }
   /* *********Contacto******* */
-  .contactoMainS1InfoPrincipal {
-    width: 100%; }
   .contactoMainS2 {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); }
   .contactoMainS2ContenedoForm {

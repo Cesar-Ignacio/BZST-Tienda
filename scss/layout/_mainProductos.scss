@@ -35,7 +35,9 @@
 
 .productoMainS2Filtro {
 
-   // border: #f77062 solid 1px;
+    //border: #f77062 solid 1px;
+    position: sticky;
+    top: 4rem;
     height: fit-content;
 
     .dropbtn {

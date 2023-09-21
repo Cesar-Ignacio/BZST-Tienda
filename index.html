@@ -171,7 +171,7 @@
             <div class="inicioMainS2Titulo">
                 <h2>Los mas buscados!</h2>
             </div>
-            <div class="swiperContenedor swiper mySwiper">
+            <div class="swiperContenedor swiper mySwiperMb">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide ">
                         <article class="cardV1">
@@ -671,6 +671,19 @@
 
     <!-- Initialize Swiper -->
     <script>
+        var swiper = new Swiper(".mySwiperMb", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            freeMode: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 10,
@@ -680,6 +693,7 @@
                 clickable: true,
             },
         });
+        
     </script>
 </body>
 
