@@ -20,20 +20,20 @@
     }
 }
 
-.carroMainS1Producto {
-    //poner como componente
+.cardCarrito {
     background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     margin-bottom: 1rem;
     padding: 0.5em;
     display: flex;
     gap: 1rem;
-    // border: red solid 1px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px 1px rgb(186, 182, 182);
 }
 
-.carroMainS1ContenedorImg {
+.cardCarritoContenedoImg {
     //border: blue solid 1px;
-    //width: clamp(10rem, 8vw, 15rem);
-    width: 20%;
+    //width: clamp(30rem, 8vw, 15rem);
+    width: 50%;
     height: fit-content;
 
     img {
@@ -43,21 +43,27 @@
 
 }
 
-.carroMainS1InfoProducto {
+.cardCarritoContenedorInfo {
     //border: violet solid 1px;
     display: flex;
-    flex-direction: column;
     //flex-grow: 1;
-    width: 80%;
+    flex-direction: column;
+    width: 50%;
 }
 
-.carroMainS1Descripcion {
+.cardInfo {
     // border: #0f2a41 solid 1px;
     height: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    .tituloDescripcion {
+        border: red solid 1px;
+        width: 25rem;
+        //width: clamp(25rem, 5vw, 100%);
+    }
 
     // logo de producto
     svg {
@@ -72,14 +78,8 @@
 
         .bntInput {
             width: 1rem;
-            
-        }
-    }
 
-    .tituloDescripcion{
-        border: red solid 1px;
-        width: 25rem;
-        //width: clamp(25rem, 5vw, 100%);
+        }
     }
 
     .carroMainS1Precio {
@@ -88,7 +88,7 @@
 
 }
 
-.carroMainS1Destalles {
+.cardFooter {
     // border: green solid 1px;
     height: 20%;
     display: flex;
