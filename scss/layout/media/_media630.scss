@@ -44,9 +44,19 @@
     }
 
     /*************Carrtio*********/
-    .carroMainS1Destalles {
-        justify-content: space-between;
+    
+    .cardCarritoContenedoImg {
+        width: 50%;
+        height: fit-content;
+    }
+    
+    .cardCarritoContenedorInfo {
+        width:50%;
+    }
 
+    .cardCarritoFooter {
+        justify-content: space-between;
+        margin-top: 0.5rem;
         a {
             margin-right: 0;
         }

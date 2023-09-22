@@ -245,3 +245,86 @@
 
     }
 }
+
+.cardCarrito {
+    //border: #F10F4D solid 2px;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    margin-bottom: 1rem;
+    padding: 0.5em;
+    display: flex;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px 1px rgb(186, 182, 182);
+    height: auto;
+}
+
+.cardCarritoContenedoImg {
+    //border: blue solid 1px;
+    width: 20%;
+    height: fit-content;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+.cardCarritoContenedorInfo {
+    //border: violet solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.cardInfo {
+    //border: #0f2a41 solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .tituloDescripcion {
+        //border: red solid 1px;
+        //width: 25rem;
+        width: clamp(25rem, 5vw, 100%);
+    }
+
+    // logo de marca
+    svg {
+        fill: $colorHeader;
+        width: clamp(4rem, 5vw, 7rem);
+    }
+
+    // formulario cantidod
+    form {
+        width: 8rem;
+        border-radius: 1rem;
+
+        .bntInput {
+            width: 1rem;
+
+        }
+    }
+
+    strong{
+        font-size: calc(0.5vw + 1rem);
+    }
+
+}
+
+.cardCarritoFooter {
+    //border: green solid 1px;
+    border-top-style: solid;
+    border-width:3px;
+    border-image: radial-gradient(rgb(50, 49, 50), rgba(250, 225, 66, 0.016)) 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    a {
+        text-decoration: none;
+        margin-right: 1rem;
+    }
+}
