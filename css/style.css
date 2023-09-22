@@ -822,7 +822,7 @@
   gap: 1rem; }
 
 .carroMainS1ContenedorImg {
-  width: clamp(10rem, 8vw, 15rem);
+  width: 20%;
   height: fit-content; }
   .carroMainS1ContenedorImg img {
     width: 100%;
@@ -831,7 +831,7 @@
 .carroMainS1InfoProducto {
   display: flex;
   flex-direction: column;
-  flex-grow: 1; }
+  width: 80%; }
 
 .carroMainS1Descripcion {
   height: 80%;
@@ -840,14 +840,16 @@
   align-items: center;
   flex-wrap: wrap; }
   .carroMainS1Descripcion svg {
-    fill: #0F5EA1;
-    width: clamp(3rem, 10vw, 7rem); }
+    fill: #1E1D1D;
+    width: clamp(2rem, 5vw, 7rem); }
   .carroMainS1Descripcion form {
     width: 8rem;
     border-radius: 1rem; }
     .carroMainS1Descripcion form .bntInput {
-      width: 1rem;
-      fill: red; }
+      width: 1rem; }
+  .carroMainS1Descripcion .tituloDescripcion {
+    border: red solid 1px;
+    width: 25rem; }
   .carroMainS1Descripcion .carroMainS1Precio {
     font-size: calc(0.5vw + 1rem); }
 
