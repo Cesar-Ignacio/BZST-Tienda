@@ -907,11 +907,9 @@
   gap: 0.5rem; }
 
 .carroMainS1OtroArticulo {
-  display: flex;
-  position: relative; }
+  display: flex; }
   .carroMainS1OtroArticulo img {
-    width: 7rem;
-    height: fit-content; }
+    width: 7rem; }
   .carroMainS1OtroArticulo .carroMainS1OtroArticuloInfo {
     display: flex;
     justify-content: space-between;
