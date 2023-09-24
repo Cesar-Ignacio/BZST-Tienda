@@ -7,16 +7,22 @@
   box-sizing: border-box; }
 
 /*---------------Componentes----------------*/
-.btnBasico, .btnCarritoCompra, .btnv1, .btnV2 {
+.btnBasico, .btnCarritoCompra, .btnCarritoCompraV2, .btnv1, .btnV2 {
   padding: 0.5em 2em;
   border-radius: 2rem;
   transition: all linear 0.2s;
   text-decoration: none;
   color: #1E1D1D; }
-  .btnBasico:hover, .btnCarritoCompra:hover, .btnv1:hover, .btnV2:hover {
+  .btnBasico:hover, .btnCarritoCompra:hover, .btnCarritoCompraV2:hover, .btnv1:hover, .btnV2:hover {
     filter: invert(2); }
 
 .btnCarritoCompra {
+  background-color: #F1C40F; }
+
+.btnCarritoCompraV2 {
+  width: fit-content;
+  padding: 0.1em 2em;
+  border-radius: 2rem;
   background-color: #F1C40F; }
 
 .btnv1 {
@@ -869,6 +875,7 @@
 .carroMainS1ResumenCompra {
   padding: 1em 0.5em;
   width: 100%;
+  height: fit-content;
   grid-column: 2;
   border: rgba(215, 214, 214, 0.534) solid 1px;
   border-radius: 0.5rem;
@@ -900,23 +907,19 @@
   gap: 0.5rem; }
 
 .carroMainS1OtroArticulo {
-  display: flex; }
+  display: flex;
+  position: relative; }
   .carroMainS1OtroArticulo img {
-    width: 7rem; }
-  .carroMainS1OtroArticulo ul {
-    padding: 0.4em;
-    margin: 0; }
-    .carroMainS1OtroArticulo ul li {
-      list-style: none; }
-      .carroMainS1OtroArticulo ul li span {
-        font-size: 1.1rem; }
-      .carroMainS1OtroArticulo ul li P {
-        font-size: 0.8rem;
-        line-height: 0.7rem; }
-      .carroMainS1OtroArticulo ul li strong {
-        color: #F10F4D; }
-      .carroMainS1OtroArticulo ul li a {
-        font-size: 0.8rem; }
+    width: 7rem;
+    height: fit-content; }
+  .carroMainS1OtroArticulo .carroMainS1OtroArticuloInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+    .carroMainS1OtroArticulo .carroMainS1OtroArticuloInfo p {
+      margin: 0;
+      line-height: 1rem;
+      font-size: 0.8rem; }
 
 /*---------------Footer----------------*/
 .footer {

@@ -24,6 +24,7 @@
 .carroMainS1ResumenCompra {
     padding: 1em 0.5em;
     width: 100%;
+    height: fit-content;
     grid-column: 2;
     @include shadowCarrito();
 
@@ -69,37 +70,25 @@
 .carroMainS1OtroArticulo {
     //border: blue solid 1px;
     display: flex;
-
+    position: relative;
     img {
-        // border: #f1f500 solid 1px;
         width: 7rem;
-
+        height: fit-content;
+    
     }
-
-    ul {
-        // border: red solid 1px;
-        padding: 0.4em;
-        margin: 0;
-
-        li {
-            list-style: none;
-
-            span {
-                font-size: 1.1rem;
-            }
-
-            P {
-                font-size: 0.8rem;
-                line-height: 0.7rem;
-            }
-
-            strong {
-                color: #F10F4D;
-            }
-
-            a {
-                font-size: 0.8rem;
-            }
+    .carroMainS1OtroArticuloInfo {
+        //border: salmon solid 1px;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+        p{
+            margin:0;
+            line-height: 1rem;
+            font-size: 0.8rem;
+            
         }
+        
     }
+  
 }
+
