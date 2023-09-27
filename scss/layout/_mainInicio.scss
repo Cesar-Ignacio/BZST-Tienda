@@ -80,7 +80,7 @@
         transition: all linear 0.5s;
 
         strong {
-            font-size: calc(1vw + 1rem);
+            font-size:clamp(1rem , 2vw, 2rem);
         }
 
         &:hover {
@@ -91,6 +91,7 @@
 
 .inicioMainS4 {
     @extend .inicioMainS2;
+    // border: red solid 1px
 }
 
 .inicioMainS4Titulo {
