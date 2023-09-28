@@ -6,28 +6,31 @@ El sitio cuenta con una barra de navegación que está visible en todas las pág
 - ### Inicio:
 En esta sección se mostrarán los productos más buscados, las categorías y las marcas de juguetes.
 
-![inicio](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/4f432e61-03b8-4178-988e-5ca68a2daf2a)
+![inicioo](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/313297d6-6be5-43af-bb84-e6b281c3766f)
+
 
 - ### Nosotros:
 En esta sección se cuenta un poco la historia de la empresa, el equipo que la conforma, las opiniones de los clientes y, por último, las novedades y noticias sobre la empresa.
 
-![Vídeo sin título ‐ Hecho con Clipchamp](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/1b82d04b-be41-4181-bda9-6b95c6db8ca5)
+![nosotros](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/f3d27f4d-28c0-493e-ae40-9a49e7449654)
+
 
 - ### Productos:
 Se mostrarán los productos más destacados, el catálogo de productos que podrán ser filtrados según la marca, categoría, precio y rango de edad.
 
-![Vídeo sin título ‐ Hecho con Clipchamp (1)](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/9e2dbb50-fc0f-4425-8095-3d67df78b191)
+![Productos](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/7b3a84a2-c525-4556-a587-71a267b8d02f)
 
 
 - ### Contacto:
 En esta sección podrás contactarnos para realizar cualquier consulta, sugerencia, reclamación o felicitación. Puedes ponerte en contacto con nosotros por teléfono, correo electrónico, formulario web o visitando la sucursal más cercana.
 
-![Vídeo sin título ‐ Hecho con Clipchamp (2)](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/44bda1c9-a77f-4a01-a766-faea52668320)
+![contacto](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/d85329fe-d4a6-4f0a-94c7-5e740b598455)
+
 
 - ### Carrito:
 En esta página podrás ver los productos agregados al carrito, así como un resumen de la compra con una variedad de opciones.
 
-![Vídeo sin título ‐ Hecho con Clipchamp (3)](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/7a9545f1-9c03-4e30-84d4-2c45b40c98d8)
+![carrito](https://github.com/Cesar-Ignacio/BZST-Tienda/assets/73149891/8fe703f6-3540-4ed2-8488-045c1d896270)
 
 
 ## Servidores
